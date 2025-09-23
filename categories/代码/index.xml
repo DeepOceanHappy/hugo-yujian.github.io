@@ -13,188 +13,221 @@
         <pubDate>Tue, 09 Sep 2025 00:00:00 +0000</pubDate>
         
         <guid>https://yj.al/p/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</guid>
-        <description>&lt;img src="https://yj.al/p/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/arian-darvishi-wh-RPfR_3_M-unsplash.jpg" alt="Featured image of post Linux常用命令记录" /&gt;&lt;h3 id=&#34;linux目录结构&#34;&gt;linux目录结构
-&lt;/h3&gt;&lt;p&gt;/，根目录
-root，存放root用户的相关文件
-home，存放普通用户的相关文件
-bin，存放常用命令的目录，如vi，su
-sbin，要具有一定权限才可以使用命令
-mnt，默认挂载光驱和软驱的目录
-etc，存放配置的相关文件
-var，存放经常变化的文件，如网络连接的sock文件 、日志
-boot，存放引导系统启动的相关文件
-usr，安装一个软件的默认目录，相当于windows下的program files
-proc，这个目录是一个虚拟的目录，它是系统内存的映射，访问这个目录来获取系统信息
-srv ，service缩写。该目录存放一些服务启动之后需要提取的数据
-sys，这是linux2.6内核的一个很大的变化，该目录下安装了2.6内核中新出现的一个文件系统
-tmp，这个目录是用来存放一些临时文件的
-del，类似于windows的设备管理器，把所有的硬件用文件的形式存储
-media，系统提供该目录是为了让用户临时挂载别的文件系统的，我们可以将外部的存储挂载在/mnt/上，然后进入该目录就可以查看里面的内容了。
-opt，这是给主机额外安装软件所摆放，如安装oracle数据库就可放到该目录下默认为空。
-selinux，selinux是一种安全子系统，它能控制程序只能访问特定文件。 &lt;/p&gt;
+        <description>&lt;img src="https://yj.al/p/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/arian-darvishi-wh-RPfR_3_M-unsplash.jpg" alt="Featured image of post Linux常用命令记录" /&gt;&lt;h3 id=&#34;linux-目录结构&#34;&gt;Linux 目录结构
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;/&lt;/code&gt;：根目录&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;/root&lt;/code&gt;：存放 &lt;strong&gt;root&lt;/strong&gt; 用户的相关文件&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;/home&lt;/code&gt;：存放普通用户的相关文件&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;/bin&lt;/code&gt;：存放常用命令的目录，如 &lt;code&gt;vi&lt;/code&gt;、&lt;code&gt;su&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;/sbin&lt;/code&gt;：需要一定权限才能使用的命令&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;/mnt&lt;/code&gt;：默认挂载光驱和软驱的目录&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;/etc&lt;/code&gt;：存放配置文件的目录&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;/var&lt;/code&gt;：存放经常变化的文件，如日志和网络连接文件&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;/boot&lt;/code&gt;：存放引导系统启动的相关文件&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;/usr&lt;/code&gt;：安装软件的默认目录，相当于 Windows 下的 &lt;code&gt;Program Files&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;/proc&lt;/code&gt;：一个虚拟目录，它是系统内存的映射，用于获取系统信息&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;/srv&lt;/code&gt;：&lt;strong&gt;service&lt;/strong&gt; 的缩写，存放服务启动后需要提取的数据&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;/sys&lt;/code&gt;：Linux 2.6 内核新出现的文件系统&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;/tmp&lt;/code&gt;：存放临时文件的目录&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;/dev&lt;/code&gt;：类似于 Windows 的设备管理器，将所有硬件以文件形式存储&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;/media&lt;/code&gt;：用于临时挂载其他文件系统&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;/opt&lt;/code&gt;：用于额外安装软件，如安装 Oracle 数据库&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;/selinux&lt;/code&gt;：一种安全子系统，用于控制程序访问特定文件&lt;/li&gt;
+&lt;/ul&gt;
 &lt;hr&gt;
 &lt;h3 id=&#34;帮助命令&#34;&gt;帮助命令
-&lt;/h3&gt;&lt;h4 id=&#34;man获取帮助信息&#34;&gt;man：获取帮助信息
-&lt;/h4&gt;&lt;h4 id=&#34;help获取shell内置帮助信息&#34;&gt;help：获取shell内置帮助信息
+&lt;/h3&gt;&lt;h4 id=&#34;man获取帮助信息&#34;&gt;&lt;code&gt;man&lt;/code&gt;：获取帮助信息
+&lt;/h4&gt;&lt;h4 id=&#34;help获取-shell-内置帮助信息&#34;&gt;&lt;code&gt;help&lt;/code&gt;：获取 Shell 内置帮助信息
 &lt;/h4&gt;&lt;hr&gt;
-&lt;h3 id=&#34;linux常用快捷键&#34;&gt;linux常用快捷键
-&lt;/h3&gt;&lt;h4 id=&#34;ctrll--清屏&#34;&gt;ctrl+l  清屏
-&lt;/h4&gt;&lt;h4 id=&#34;ctrlq-退出&#34;&gt;ctrl+q 退出
-&lt;/h4&gt;&lt;h4 id=&#34;ctrlc-停止进程&#34;&gt;ctrl+c 停止进程
-&lt;/h4&gt;&lt;h4 id=&#34;上下键-查找曾经执行过的命令&#34;&gt;上下键 查找曾经执行过的命令
-&lt;/h4&gt;&lt;h4 id=&#34;tab-命令补全&#34;&gt;Tab 命令补全
-&lt;/h4&gt;&lt;hr&gt;
+&lt;h3 id=&#34;linux-常用快捷键&#34;&gt;Linux 常用快捷键
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;Ctrl&lt;/code&gt; + &lt;code&gt;L&lt;/code&gt;：清屏&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Ctrl&lt;/code&gt; + &lt;code&gt;Q&lt;/code&gt;：退出&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Ctrl&lt;/code&gt; + &lt;code&gt;C&lt;/code&gt;：停止进程&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;↑&lt;/code&gt; &lt;code&gt;↓&lt;/code&gt;：查找曾经执行过的命令&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Tab&lt;/code&gt;：命令补全&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
 &lt;h3 id=&#34;目录相关命令&#34;&gt;目录相关命令
-&lt;/h3&gt;&lt;h4 id=&#34;pwd-显示绝对路径&#34;&gt;pwd 显示绝对路径
-&lt;/h4&gt;&lt;h4 id=&#34;ls-列出目录下文件&#34;&gt;ls 列出目录下文件
-&lt;/h4&gt;&lt;blockquote&gt;
-&lt;p&gt;-a 显示全部文件
--l 简写ll,显示详细信息&lt;/p&gt;&lt;/blockquote&gt;
-&lt;h4 id=&#34;cd-切换到指定目录&#34;&gt;cd 切换到指定目录
-&lt;/h4&gt;&lt;blockquote&gt;
-&lt;p&gt;相对路径 ./  ../  ~
-绝对路径 以/开头，唯一的路径&lt;/p&gt;&lt;/blockquote&gt;
-&lt;h4 id=&#34;mkdir-创建指定目录&#34;&gt;mkdir 创建指定目录
-&lt;/h4&gt;&lt;blockquote&gt;
-&lt;p&gt;-p 创建多层&lt;/p&gt;&lt;/blockquote&gt;
-&lt;h4 id=&#34;rmdir-删除空目录&#34;&gt;rmdir 删除空目录
-&lt;/h4&gt;&lt;blockquote&gt;
-&lt;p&gt;-p 删除多层&lt;/p&gt;&lt;/blockquote&gt;
-&lt;h4 id=&#34;cp-复制目录或文件&#34;&gt;cp 复制目录或文件
-&lt;/h4&gt;&lt;blockquote&gt;
-&lt;p&gt;-r 递归复制整个文件夹&lt;/p&gt;&lt;/blockquote&gt;
-&lt;h4 id=&#34;mv-移动或重命名文件&#34;&gt;mv 移动或重命名文件
-&lt;/h4&gt;&lt;h4 id=&#34;rm-删除文件或目录&#34;&gt;rm 删除文件或目录
-&lt;/h4&gt;&lt;blockquote&gt;
-&lt;p&gt;-f：force强制执行
--r：recursive递归执行
--rf：强制递归执行
--f *： 删除所有文件&lt;/p&gt;&lt;/blockquote&gt;
+&lt;/h3&gt;&lt;h4 id=&#34;pwd显示绝对路径&#34;&gt;&lt;code&gt;pwd&lt;/code&gt;：显示绝对路径
+&lt;/h4&gt;&lt;h4 id=&#34;ls列出目录下文件&#34;&gt;&lt;code&gt;ls&lt;/code&gt;：列出目录下文件
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;-a&lt;/code&gt;：显示所有文件（包括隐藏文件）&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;-l&lt;/code&gt;：显示详细信息，简写为 &lt;code&gt;ll&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;cd切换到指定目录&#34;&gt;&lt;code&gt;cd&lt;/code&gt;：切换到指定目录
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;相对路径&lt;/strong&gt;：&lt;code&gt;./&lt;/code&gt; (当前目录), &lt;code&gt;../&lt;/code&gt; (上级目录), &lt;code&gt;~&lt;/code&gt; (主目录)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;绝对路径&lt;/strong&gt;：以 &lt;code&gt;/&lt;/code&gt; 开头，唯一的路径&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;mkdir创建指定目录&#34;&gt;&lt;code&gt;mkdir&lt;/code&gt;：创建指定目录
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;-p&lt;/code&gt;：创建多层目录&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;rmdir删除空目录&#34;&gt;&lt;code&gt;rmdir&lt;/code&gt;：删除空目录
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;-p&lt;/code&gt;：删除多层目录&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;cp复制目录或文件&#34;&gt;&lt;code&gt;cp&lt;/code&gt;：复制目录或文件
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;-r&lt;/code&gt;：递归复制整个文件夹&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;mv移动或重命名文件&#34;&gt;&lt;code&gt;mv&lt;/code&gt;：移动或重命名文件
+&lt;/h4&gt;&lt;h4 id=&#34;rm删除文件或目录&#34;&gt;&lt;code&gt;rm&lt;/code&gt;：删除文件或目录
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;-f&lt;/code&gt;：&lt;strong&gt;force&lt;/strong&gt;，强制执行&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;-r&lt;/code&gt;：&lt;strong&gt;recursive&lt;/strong&gt;，递归执行&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;-rf&lt;/code&gt;：强制递归删除&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;rm -f *&lt;/code&gt;：删除当前目录下所有文件&lt;/li&gt;
+&lt;/ul&gt;
 &lt;hr&gt;
 &lt;h3 id=&#34;文件相关命令&#34;&gt;文件相关命令
-&lt;/h3&gt;&lt;h4 id=&#34;touch-创建空文件&#34;&gt;touch 创建空文件
-&lt;/h4&gt;&lt;h4 id=&#34;echo-输出字符串或变量值还可以搭配从定向符将内容存储到文件&#34;&gt;echo 输出字符串或变量值，还可以搭配从定向符将内容存储到文件
-&lt;/h4&gt;&lt;h4 id=&#34;cat-查看文件内容从第一行开始显示&#34;&gt;cat 查看文件内容，从第一行开始显示
-&lt;/h4&gt;&lt;blockquote&gt;
-&lt;p&gt;-A：列出特殊字符而非空白
--b：列出行号，空白行不算行号
--n：列出行号，空白行也会有行号
--v：列出一些看不出来的特殊字符&lt;/p&gt;&lt;/blockquote&gt;
-&lt;h4 id=&#34;more-查看文件内容一页一页的显示&#34;&gt;more 查看文件内容，一页一页的显示
-&lt;/h4&gt;&lt;blockquote&gt;
-&lt;p&gt;空格键（space）：向下翻一页
-enter：向下翻一行&lt;/p&gt;&lt;/blockquote&gt;
-&lt;h4 id=&#34;head-查看文件内容只看头几行&#34;&gt;head 查看文件内容，只看头几行
-&lt;/h4&gt;&lt;blockquote&gt;
-&lt;p&gt; -n：查看头n行&lt;/p&gt;&lt;/blockquote&gt;
-&lt;h4 id=&#34;tail-查看文件内容只查看文件末尾几行&#34;&gt;tail 查看文件内容，只查看文件末尾几行
-&lt;/h4&gt;&lt;blockquote&gt;
-&lt;p&gt; -n：末尾几行
--f：follow输出文件修改的内容，用于追踪文件修改&lt;/p&gt;&lt;/blockquote&gt;
-&lt;h4 id=&#34;wc-统计指定文本的行数字数字节数&#34;&gt;wc 统计指定文本的行数、字数、字节数
-&lt;/h4&gt;&lt;h4 id=&#34;stat-查看文件的具体存储信息和时间等信息&#34;&gt;stat 查看文件的具体存储信息和时间等信息
-&lt;/h4&gt;&lt;h4 id=&#34;file-查看文件类型&#34;&gt;file 查看文件类型
-&lt;/h4&gt;&lt;h4 id=&#34;wget-下载网络文件&#34;&gt;wget 下载网络文件
-&lt;/h4&gt;&lt;blockquote&gt;
-&lt;p&gt; -b：后台下载
--P：下载到指定目录
--O：指定一个文件名
--c：断点续传
--spider：测试下载链接&lt;/p&gt;&lt;/blockquote&gt;
+&lt;/h3&gt;&lt;h4 id=&#34;touch创建空文件&#34;&gt;&lt;code&gt;touch&lt;/code&gt;：创建空文件
+&lt;/h4&gt;&lt;h4 id=&#34;echo输出字符串或变量值可以搭配重定向符--或--将内容存储到文件&#34;&gt;&lt;code&gt;echo&lt;/code&gt;：输出字符串或变量值，可以搭配重定向符 &lt;code&gt;&amp;gt;&lt;/code&gt; 或 &lt;code&gt;&amp;gt;&amp;gt;&lt;/code&gt; 将内容存储到文件
+&lt;/h4&gt;&lt;h4 id=&#34;cat查看文件内容从第一行开始显示&#34;&gt;&lt;code&gt;cat&lt;/code&gt;：查看文件内容，从第一行开始显示
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;-A&lt;/code&gt;：列出特殊字符&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;-b&lt;/code&gt;：列出行号，空白行不算&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;-n&lt;/code&gt;：列出行号，空白行也算&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;-v&lt;/code&gt;：列出一些看不出的特殊字符&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;more查看文件内容一页一页显示&#34;&gt;&lt;code&gt;more&lt;/code&gt;：查看文件内容，一页一页显示
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;空格键&lt;/code&gt;：向下翻一页&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Enter&lt;/code&gt;：向下翻一行&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;head查看文件内容只看头几行&#34;&gt;&lt;code&gt;head&lt;/code&gt;：查看文件内容，只看头几行
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;-n&lt;/code&gt;：查看头 &lt;code&gt;n&lt;/code&gt; 行&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;tail查看文件内容只查看文件末尾几行&#34;&gt;&lt;code&gt;tail&lt;/code&gt;：查看文件内容，只查看文件末尾几行
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;-n&lt;/code&gt;：查看末尾 &lt;code&gt;n&lt;/code&gt; 行&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;-f&lt;/code&gt;：&lt;strong&gt;follow&lt;/strong&gt;，追踪文件修改，用于查看实时日志&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;wc统计指定文本的行数字数字节数&#34;&gt;&lt;code&gt;wc&lt;/code&gt;：统计指定文本的行数、字数、字节数
+&lt;/h4&gt;&lt;h4 id=&#34;stat查看文件的具体存储信息和时间信息&#34;&gt;&lt;code&gt;stat&lt;/code&gt;：查看文件的具体存储信息和时间信息
+&lt;/h4&gt;&lt;h4 id=&#34;file查看文件类型&#34;&gt;&lt;code&gt;file&lt;/code&gt;：查看文件类型
+&lt;/h4&gt;&lt;h4 id=&#34;wget下载网络文件&#34;&gt;&lt;code&gt;wget&lt;/code&gt;：下载网络文件
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;-b&lt;/code&gt;：后台下载&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;-P&lt;/code&gt;：下载到指定目录&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;-O&lt;/code&gt;：指定文件名&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;-c&lt;/code&gt;：断点续传&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;--spider&lt;/code&gt;：测试下载链接&lt;/li&gt;
+&lt;/ul&gt;
 &lt;hr&gt;
 &lt;h3 id=&#34;查找命令&#34;&gt;查找命令
-&lt;/h3&gt;&lt;h4 id=&#34;find-查找文件或目录&#34;&gt;find 查找文件或目录
-&lt;/h4&gt;&lt;blockquote&gt;
-&lt;p&gt; -name：按文件名称查找
--user：按文件拥有者查找
--size：根按文件大小查找文件（+n大于，-n小于，n等于）&lt;/p&gt;&lt;/blockquote&gt;
-&lt;h4 id=&#34;grep-在文件内搜索字符串匹配的行并输出&#34;&gt;grep 在文件内搜索字符串匹配的行并输出
-&lt;/h4&gt;&lt;blockquote&gt;
-&lt;p&gt; -c：count只输出匹配行的计数
--n：line-number&lt;/p&gt;&lt;/blockquote&gt;
-&lt;h4 id=&#34;which-搜索命令所在目录及别名信息&#34;&gt;which 搜索命令所在目录及别名信息
+&lt;/h3&gt;&lt;h4 id=&#34;find查找文件或目录&#34;&gt;&lt;code&gt;find&lt;/code&gt;：查找文件或目录
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;-name&lt;/code&gt;：按文件名称查找&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;-user&lt;/code&gt;：按文件拥有者查找&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;-size&lt;/code&gt;：按文件大小查找（&lt;code&gt;+n&lt;/code&gt; 大于, &lt;code&gt;-n&lt;/code&gt; 小于, &lt;code&gt;n&lt;/code&gt; 等于）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;grep在文件内搜索字符串匹配的行并输出&#34;&gt;&lt;code&gt;grep&lt;/code&gt;：在文件内搜索字符串匹配的行并输出
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;-c&lt;/code&gt;：只输出匹配行的计数&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;-n&lt;/code&gt;：显示行号&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;which搜索命令所在目录及别名信息&#34;&gt;&lt;code&gt;which&lt;/code&gt;：搜索命令所在目录及别名信息
 &lt;/h4&gt;&lt;hr&gt;
 &lt;h3 id=&#34;日期命令&#34;&gt;日期命令
-&lt;/h3&gt;&lt;h4 id=&#34;date-显示或设置时间&#34;&gt;date 显示或设置时间
-&lt;/h4&gt;&lt;blockquote&gt;
-&lt;p&gt;-s：set 以字符串格式设置时间
-+%Y%m%d：显示当前年月日
-&amp;ldquo;+%Y-%m-%d %H:%M:%S&amp;rdquo;：显示当前年月日时分秒&lt;/p&gt;&lt;/blockquote&gt;
+&lt;/h3&gt;&lt;h4 id=&#34;date显示或设置时间&#34;&gt;&lt;code&gt;date&lt;/code&gt;：显示或设置时间
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;-s&lt;/code&gt;：以字符串格式设置时间&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;date &amp;quot;+%Y%m%d&amp;quot;&lt;/code&gt;：显示当前年月日&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;date &amp;quot;+%Y-%m-%d %H:%M:%S&amp;quot;&lt;/code&gt;：显示当前年月日时分秒&lt;/li&gt;
+&lt;/ul&gt;
 &lt;hr&gt;
 &lt;h3 id=&#34;进程线程命令&#34;&gt;进程线程命令
-&lt;/h3&gt;&lt;h4 id=&#34;ps-查看系统中所有进程&#34;&gt;ps 查看系统中所有进程
-&lt;/h4&gt;&lt;blockquote&gt;
-&lt;p&gt;-a：显示现行终端机下的所有程序
--u：以用户为主的格式来显示程序状况
--x： 显示所有程序，不以终端机来区分
--aux | grep xxx：筛选查看进程&lt;/p&gt;&lt;/blockquote&gt;
-&lt;h4 id=&#34;top-查看系统健康状态&#34;&gt;top 查看系统健康状态
-&lt;/h4&gt;&lt;h4 id=&#34;kill-终止某个指定pid的服务进程&#34;&gt;kill 终止某个指定pid的服务进程
-&lt;/h4&gt;&lt;blockquote&gt;
-&lt;p&gt;-9：强迫进程立即停止&lt;/p&gt;&lt;/blockquote&gt;
+&lt;/h3&gt;&lt;h4 id=&#34;ps查看系统中所有进程&#34;&gt;&lt;code&gt;ps&lt;/code&gt;：查看系统中所有进程
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;-a&lt;/code&gt;：显示现行终端机下的所有程序&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;-u&lt;/code&gt;：以用户为主的格式显示&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;-x&lt;/code&gt;：显示所有程序&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ps -aux | grep xxx&lt;/code&gt;：筛选查看指定进程&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;top查看系统健康状态&#34;&gt;&lt;code&gt;top&lt;/code&gt;：查看系统健康状态
+&lt;/h4&gt;&lt;h4 id=&#34;kill终止某个指定-pid-的服务进程&#34;&gt;&lt;code&gt;kill&lt;/code&gt;：终止某个指定 &lt;strong&gt;PID&lt;/strong&gt; 的服务进程
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;-9&lt;/code&gt;：强制进程立即停止&lt;/li&gt;
+&lt;/ul&gt;
 &lt;hr&gt;
 &lt;h3 id=&#34;打包和压缩命令&#34;&gt;打包和压缩命令
-&lt;/h3&gt;&lt;h4 id=&#34;tar-打包目录&#34;&gt;tar 打包目录
-&lt;/h4&gt;&lt;blockquote&gt;
-&lt;p&gt; -c：create生成.tar打包文件
--x：extract解包.tar文件
--v：verbose显示详细信息
--f：file指定压缩后的文件名
--z：打包同时压缩
--C：解压到指定目录
--zxvf：解压包
--zcvf：打包&lt;/p&gt;&lt;/blockquote&gt;
-&lt;h4 id=&#34;zip和unzip-压缩和解压缩文件和目录&#34;&gt;zip和unzip 压缩和解压缩文件和目录
-&lt;/h4&gt;&lt;blockquote&gt;
-&lt;p&gt;-r：递归压缩目录&lt;/p&gt;&lt;/blockquote&gt;
-&lt;h4 id=&#34;gzip和gunzip-压缩和解压缩文件&#34;&gt;gzip和gunzip 压缩和解压缩文件
+&lt;/h3&gt;&lt;h4 id=&#34;tar打包目录&#34;&gt;&lt;code&gt;tar&lt;/code&gt;：打包目录
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;-c&lt;/code&gt;：&lt;strong&gt;create&lt;/strong&gt;，生成 &lt;code&gt;.tar&lt;/code&gt; 包&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;-x&lt;/code&gt;：&lt;strong&gt;extract&lt;/strong&gt;，解包 &lt;code&gt;.tar&lt;/code&gt; 文件&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;-v&lt;/code&gt;：&lt;strong&gt;verbose&lt;/strong&gt;，显示详细信息&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;-f&lt;/code&gt;：&lt;strong&gt;file&lt;/strong&gt;，指定打包后的文件名&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;-z&lt;/code&gt;：打包同时压缩&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;-C&lt;/code&gt;：解压到指定目录&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;tar -zxvf&lt;/code&gt;：解压包&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;tar -zcvf&lt;/code&gt;：打包&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;zip-和-unzip压缩和解压缩文件及目录&#34;&gt;&lt;code&gt;zip&lt;/code&gt; 和 &lt;code&gt;unzip&lt;/code&gt;：压缩和解压缩文件及目录
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;-r&lt;/code&gt;：递归压缩目录&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;gzip-和-gunzip压缩和解压缩文件&#34;&gt;&lt;code&gt;gzip&lt;/code&gt; 和 &lt;code&gt;gunzip&lt;/code&gt;：压缩和解压缩文件
 &lt;/h4&gt;&lt;hr&gt;
 &lt;h3 id=&#34;系统状态检测命令&#34;&gt;系统状态检测命令
-&lt;/h3&gt;&lt;h4 id=&#34;ifconfig-获取网卡配置和网络状态信息&#34;&gt;ifconfig 获取网卡配置和网络状态信息
-&lt;/h4&gt;&lt;h4 id=&#34;netstat-显示整个系统目前网络情况&#34;&gt;netstat 显示整个系统目前网络情况
-&lt;/h4&gt;&lt;blockquote&gt;
-&lt;p&gt;-nplt 查看网络进程&lt;/p&gt;&lt;/blockquote&gt;
-&lt;h4 id=&#34;uname-查看系统内核和系统版本等信息&#34;&gt;uname 查看系统内核和系统版本等信息
-&lt;/h4&gt;&lt;h4 id=&#34;uptime-查看系统负载信息&#34;&gt;uptime 查看系统负载信息
-&lt;/h4&gt;&lt;h4 id=&#34;free-查看当前系统内存使用信息&#34;&gt;free 查看当前系统内存使用信息
-&lt;/h4&gt;&lt;h4 id=&#34;who-查看当前登入主机的终端信息&#34;&gt;who 查看当前登入主机的终端信息
-&lt;/h4&gt;&lt;h4 id=&#34;last-系统登录的记录&#34;&gt;last 系统登录的记录
-&lt;/h4&gt;&lt;h4 id=&#34;history-历史执行过的命令&#34;&gt;history 历史执行过的命令
+&lt;/h3&gt;&lt;h4 id=&#34;ifconfig获取网卡配置和网络状态信息&#34;&gt;&lt;code&gt;ifconfig&lt;/code&gt;：获取网卡配置和网络状态信息
+&lt;/h4&gt;&lt;h4 id=&#34;netstat显示整个系统目前网络情况&#34;&gt;&lt;code&gt;netstat&lt;/code&gt;：显示整个系统目前网络情况
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;-nplt&lt;/code&gt;：查看网络进程&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;uname查看系统内核和版本信息&#34;&gt;&lt;code&gt;uname&lt;/code&gt;：查看系统内核和版本信息
+&lt;/h4&gt;&lt;h4 id=&#34;uptime查看系统负载信息&#34;&gt;&lt;code&gt;uptime&lt;/code&gt;：查看系统负载信息
+&lt;/h4&gt;&lt;h4 id=&#34;free查看当前系统内存使用信息&#34;&gt;&lt;code&gt;free&lt;/code&gt;：查看当前系统内存使用信息
+&lt;/h4&gt;&lt;h4 id=&#34;who查看当前登录主机的终端信息&#34;&gt;&lt;code&gt;who&lt;/code&gt;：查看当前登录主机的终端信息
+&lt;/h4&gt;&lt;h4 id=&#34;last查看系统登录记录&#34;&gt;&lt;code&gt;last&lt;/code&gt;：查看系统登录记录
+&lt;/h4&gt;&lt;h4 id=&#34;history查看历史执行过的命令&#34;&gt;&lt;code&gt;history&lt;/code&gt;：查看历史执行过的命令
 &lt;/h4&gt;&lt;hr&gt;
 &lt;h3 id=&#34;关机命令&#34;&gt;关机命令
-&lt;/h3&gt;&lt;h4 id=&#34;reboot-重启&#34;&gt;reboot 重启
-&lt;/h4&gt;&lt;h4 id=&#34;power-off-关闭系统&#34;&gt;power off 关闭系统
-&lt;/h4&gt;&lt;h4 id=&#34;shutdown-关机&#34;&gt;shutdown 关机
-&lt;/h4&gt;&lt;blockquote&gt;
-&lt;p&gt;-h：关机
--r：重启
-hh:mm：指定24小时制的小时和分钟后关机
-+m：m分钟后关机(+1：默认值，1分钟后关机; +0：now，立刻关机)&lt;/p&gt;&lt;/blockquote&gt;
-&lt;h3 id=&#34;yum常用命令&#34;&gt;yum常用命令
-&lt;/h3&gt;&lt;h4 id=&#34;列出所有可更新的软件清单命令&#34;&gt;列出所有可更新的软件清单命令
-&lt;/h4&gt;&lt;blockquote&gt;
-&lt;p&gt;yum check-update&lt;/p&gt;&lt;/blockquote&gt;
-&lt;h4 id=&#34;更新所有软件命令&#34;&gt;更新所有软件命令
-&lt;/h4&gt;&lt;blockquote&gt;
-&lt;p&gt;yum update&lt;/p&gt;&lt;/blockquote&gt;
-&lt;h4 id=&#34;仅安装指定的软件命令&#34;&gt;仅安装指定的软件命令
-&lt;/h4&gt;&lt;blockquote&gt;
-&lt;p&gt;yum install &amp;lt;package_name&amp;gt;&lt;/p&gt;&lt;/blockquote&gt;
-&lt;h4 id=&#34;仅更新指定的软件命令&#34;&gt;仅更新指定的软件命令
-&lt;/h4&gt;&lt;blockquote&gt;
-&lt;p&gt;yum update &amp;lt;package_name&amp;gt;&lt;/p&gt;&lt;/blockquote&gt;
-&lt;h4 id=&#34;列出所有可安裝的软件清单命令&#34;&gt;列出所有可安裝的软件清单命令
-&lt;/h4&gt;&lt;blockquote&gt;
-&lt;p&gt;yum list&lt;/p&gt;&lt;/blockquote&gt;
-&lt;h4 id=&#34;删除软件包命令&#34;&gt;删除软件包命令
-&lt;/h4&gt;&lt;blockquote&gt;
-&lt;p&gt;yum remove &amp;lt;package_name&amp;gt;&lt;/p&gt;&lt;/blockquote&gt;
-&lt;h4 id=&#34;查找软件包命令&#34;&gt;查找软件包命令
-&lt;/h4&gt;&lt;blockquote&gt;
-&lt;p&gt;yum search &lt;keyword&gt;&lt;/p&gt;&lt;/blockquote&gt;
-&lt;h4 id=&#34;清除缓存命令&#34;&gt;清除缓存命令
-&lt;/h4&gt;&lt;blockquote&gt;
-&lt;p&gt;yum clean packages: 清除缓存目录下的软件包&lt;/p&gt;&lt;/blockquote&gt;
+&lt;/h3&gt;&lt;h4 id=&#34;reboot重启&#34;&gt;&lt;code&gt;reboot&lt;/code&gt;：重启
+&lt;/h4&gt;&lt;h4 id=&#34;poweroff关闭系统&#34;&gt;&lt;code&gt;poweroff&lt;/code&gt;：关闭系统
+&lt;/h4&gt;&lt;h4 id=&#34;shutdown关机&#34;&gt;&lt;code&gt;shutdown&lt;/code&gt;：关机
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;-h&lt;/code&gt;：关机&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;-r&lt;/code&gt;：重启&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;hh:mm&lt;/code&gt;：指定 24 小时制的小时和分钟后关机&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;+m&lt;/code&gt;：&lt;code&gt;m&lt;/code&gt; 分钟后关机（&lt;code&gt;+1&lt;/code&gt; 为默认值，&lt;code&gt;+0&lt;/code&gt; 为立刻关机）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;yum-常用命令&#34;&gt;Yum 常用命令
+&lt;/h3&gt;&lt;h4 id=&#34;列出所有可更新的软件清单&#34;&gt;列出所有可更新的软件清单
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;yum check-update&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;更新所有软件&#34;&gt;更新所有软件
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;yum update&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;仅安装指定的软件&#34;&gt;仅安装指定的软件
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;yum install &amp;lt;package_name&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;仅更新指定的软件&#34;&gt;仅更新指定的软件
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;yum update &amp;lt;package_name&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;列出所有可安装的软件清单&#34;&gt;列出所有可安装的软件清单
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;yum list&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;删除软件包&#34;&gt;删除软件包
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;yum remove &amp;lt;package_name&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;查找软件包&#34;&gt;查找软件包
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;yum search &amp;lt;keyword&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;清除缓存&#34;&gt;清除缓存
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;yum clean packages&lt;/code&gt;：清除缓存目录下的软件包&lt;/li&gt;
+&lt;/ul&gt;
 </description>
         </item>
         <item>
@@ -203,42 +236,15 @@ hh:mm：指定24小时制的小时和分钟后关机
         <pubDate>Tue, 09 Sep 2025 00:00:00 +0000</pubDate>
         
         <guid>https://yj.al/p/markdown/</guid>
-        <description>&lt;img src="https://yj.al/p/markdown/kate-bezzubets-QyZlJZWavz0-unsplash.jpg" alt="Featured image of post Markdown用法" /&gt;&lt;h3 id=&#34;1-标题-headings&#34;&gt;1. 标题 (Headings)
-&lt;/h3&gt;&lt;p&gt;使用 &lt;code&gt;#&lt;/code&gt; 进行标题标记，支持1-6级标题。&lt;/p&gt;
-&lt;h1 id=&#34;一级标题&#34;&gt;一级标题
-&lt;/h1&gt;&lt;h2 id=&#34;二级标题&#34;&gt;二级标题
-&lt;/h2&gt;&lt;h3 id=&#34;三级标题&#34;&gt;三级标题
-&lt;/h3&gt;&lt;h4 id=&#34;四级标题&#34;&gt;四级标题
-&lt;/h4&gt;&lt;h5 id=&#34;五级标题&#34;&gt;五级标题
-&lt;/h5&gt;&lt;h6 id=&#34;六级标题&#34;&gt;六级标题
-&lt;/h6&gt;&lt;hr&gt;
-&lt;h3 id=&#34;2-强调-emphasis&#34;&gt;2. 强调 (Emphasis)
-&lt;/h3&gt;&lt;h4 id=&#34;斜体-italic&#34;&gt;斜体 (Italic)
-&lt;/h4&gt;&lt;p&gt;使用 &lt;code&gt;*&lt;/code&gt; 或 &lt;code&gt;_&lt;/code&gt; 标记斜体。&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;斜体文本&lt;/em&gt; 或 &lt;em&gt;斜体文本&lt;/em&gt;&lt;/p&gt;
-&lt;h4 id=&#34;粗体-bold&#34;&gt;粗体 (Bold)
-&lt;/h4&gt;&lt;p&gt;使用 &lt;code&gt;**&lt;/code&gt; 或 &lt;code&gt;__&lt;/code&gt; 标记粗体。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;**粗体文本** 或 &lt;span class=&#34;gs&#34;&gt;__粗体文本__&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;h4 id=&#34;粗斜体-bold-italic&#34;&gt;粗斜体 (Bold Italic)
-&lt;/h4&gt;&lt;p&gt;使用 &lt;code&gt;***&lt;/code&gt; 或 &lt;code&gt;___&lt;/code&gt; 同时标记粗体和斜体。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;***粗斜体文本*** 或 &lt;span class=&#34;gs&#34;&gt;___粗斜体文本___&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;3-列表-lists&#34;&gt;3. 列表 (Lists)
-&lt;/h3&gt;&lt;h4 id=&#34;无序列表-unordered-list&#34;&gt;无序列表 (Unordered List)
-&lt;/h4&gt;&lt;p&gt;使用 &lt;code&gt;-&lt;/code&gt;、&lt;code&gt;+&lt;/code&gt; 或 &lt;code&gt;*&lt;/code&gt; 标记无序列表。&lt;/p&gt;
+        <description>&lt;img src="https://yj.al/p/markdown/kate-bezzubets-QyZlJZWavz0-unsplash.jpg" alt="Featured image of post Markdown用法" /&gt;&lt;p&gt;当然！这是一份为你优化后的 Markdown 文档，旨在让你的博客文章结构更清晰、更具吸引力，并加入了一些实践建议。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;markdown-博客格式化终极指南-&#34;&gt;Markdown 博客格式化终极指南 ✍️
+&lt;/h1&gt;&lt;p&gt;你好！准备好让你的博客文章格式变得既专业又高效了吗？&lt;/p&gt;
+&lt;p&gt;Markdown 是一种轻量级标记语言，让你能够使用易于阅读和编写的纯文本格式来撰写文档，然后将其转换为结构化的 HTML。这篇指南将涵盖从基础到高级的所有技巧，助你轻松掌握 Markdown，提升写作体验和文章可读性。让我们开始吧！&lt;/p&gt;
+&lt;h2 id=&#34;一基础文本格式化&#34;&gt;一、基础文本格式化
+&lt;/h2&gt;&lt;p&gt;这些是构建文章内容的基本元素。&lt;/p&gt;
+&lt;h3 id=&#34;1-标题-headings&#34;&gt;1. 标题 (Headings)
+&lt;/h3&gt;&lt;p&gt;使用 &lt;code&gt;#&lt;/code&gt; 创建标题，一个 &lt;code&gt;#&lt;/code&gt; 为一级标题，六个 &lt;code&gt;#&lt;/code&gt; 为六级标题。为了 SEO 和文章结构清晰，&lt;strong&gt;建议每篇文章只使用一个一级标题 (&lt;code&gt;#&lt;/code&gt;)&lt;/strong&gt;。&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -247,113 +253,53 @@ hh:mm：指定24小时制的小时和分钟后关机
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;-&lt;/span&gt; 项目1
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;-&lt;/span&gt; 项目2
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;k&#34;&gt;-&lt;/span&gt; 子项目1
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;k&#34;&gt;-&lt;/span&gt; 子项目2
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;h4 id=&#34;有序列表-ordered-list&#34;&gt;有序列表 (Ordered List)
-&lt;/h4&gt;&lt;p&gt;使用数字加 &lt;code&gt;.&lt;/code&gt; 标记有序列表。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;1.&lt;/span&gt; 项目1
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;2.&lt;/span&gt; 项目2
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;   &lt;span class=&#34;k&#34;&gt;1.&lt;/span&gt; 子项目1
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;   &lt;span class=&#34;k&#34;&gt;2.&lt;/span&gt; 子项目2
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;4-链接-links&#34;&gt;4. 链接 (Links)
-&lt;/h3&gt;&lt;h4 id=&#34;内嵌链接-inline-links&#34;&gt;内嵌链接 (Inline Links)
-&lt;/h4&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;[&lt;span class=&#34;nt&#34;&gt;链接文本&lt;/span&gt;](&lt;span class=&#34;na&#34;&gt;https://example.com&lt;/span&gt;)
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;h4 id=&#34;引用链接-reference-links&#34;&gt;引用链接 (Reference Links)
-&lt;/h4&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;这是一个 [引用链接][1] 的例子。
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;[1]: https://example.com &amp;#34;Example&amp;#34;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;5-图片-images&#34;&gt;5. 图片 (Images)
-&lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;![&lt;span class=&#34;nt&#34;&gt;替代文本&lt;/span&gt;](&lt;span class=&#34;na&#34;&gt;https://example.com/image.png&lt;/span&gt;)
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;你还可以使用引用链接的方式插入图片。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;![替代文本][image1]
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;[image1]: https://example.com/image.png &amp;#34;图片标题&amp;#34;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;6-引用-blockquotes&#34;&gt;6. 引用 (Blockquotes)
-&lt;/h3&gt;&lt;p&gt;使用 &lt;code&gt;&amp;gt;&lt;/code&gt; 表示引用，可以嵌套引用。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;&amp;gt; &lt;/span&gt;&lt;span class=&#34;ge&#34;&gt;这是一个引用。
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;ge&#34;&gt;&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;&amp;gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;&lt;/span&gt;&lt;span class=&#34;ge&#34;&gt;&amp;gt; &amp;gt; 这是一个嵌套引用。
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;gh&#34;&gt;# 这是一级标题 (文章主标题)
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;gh&#34;&gt;&lt;/span&gt;&lt;span class=&#34;gu&#34;&gt;## 这是二级标题
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;gu&#34;&gt;### 这是三级标题
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;gu&#34;&gt;#### 这是四级标题
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;7-代码-code&#34;&gt;7. 代码 (Code)
-&lt;/h3&gt;&lt;h4 id=&#34;行内代码-inline-code&#34;&gt;行内代码 (Inline Code)
-&lt;/h4&gt;&lt;p&gt;使用 &lt;code&gt;`&lt;/code&gt; 包裹行内代码。&lt;/p&gt;
+&lt;/div&gt;&lt;h3 id=&#34;2-强调-emphasis&#34;&gt;2. 强调 (Emphasis)
+&lt;/h3&gt;&lt;p&gt;通过强调文本来吸引读者的注意力。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;粗体&lt;/strong&gt;：用于特别重要的关键词。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;斜体&lt;/strong&gt;：用于术语、引用或突出显示的词语。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;删除线&lt;/strong&gt;：用于表示已修正或不再相关的内容。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- end list --&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;这是 &lt;span class=&#34;sb&#34;&gt;`行内代码`&lt;/span&gt; 示例。
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;*这是斜体文本*
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;ge&#34;&gt;_这也是斜体文本_&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;gs&#34;&gt;**这是粗体文本**&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;gs&#34;&gt;__这也是粗体文本__&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;ge&#34;&gt;**&lt;/span&gt;*这是粗斜体文本***
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;gs&#34;&gt;___这也是粗斜体文本___&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;gd&#34;&gt;~~这是一个删除线文本~~&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h4 id=&#34;代码块-code-blocks&#34;&gt;代码块 (Code Blocks)
-&lt;/h4&gt;&lt;p&gt;使用三个反引号 &lt;code&gt;```&lt;/code&gt; 表示代码块，可以指定语言用于语法高亮。&lt;/p&gt;
+&lt;/div&gt;&lt;h3 id=&#34;3-段落与换行-paragraphs--line-breaks&#34;&gt;3. 段落与换行 (Paragraphs &amp;amp; Line Breaks)
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;新段落&lt;/strong&gt;：在两行文本之间保留一个空行即可创建一个新段落。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;强制换行&lt;/strong&gt;：如果希望在不开始新段落的情况下换行，请在行末添加&lt;strong&gt;两个或更多空格&lt;/strong&gt;。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- end list --&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;```python
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;def hello_world():
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    print(&amp;#34;Hello, World!&amp;#34;)
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
@@ -362,21 +308,207 @@ hh:mm：指定24小时制的小时和分钟后关机
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;8
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;### 8. 表格 (Tables)
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Markdown 支持简单的表格布局，可以对齐表头。
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;```markdown
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;| 左对齐 | 居中对齐 | 右对齐 |
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;|:-------|:--------:|-------:|
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;| 单元格 | 单元格   | 单元格 |
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;| 单元格 | 单元格   | 单元格 |
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;这是第一行。
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;这是同一段落的第二行。
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;这是新段落的第一行。
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;这是第一行。  
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;这是紧接着的第二行（强制换行）。
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;9-脚注-footnotes&#34;&gt;9. 脚注 (Footnotes)
-&lt;/h3&gt;&lt;p&gt;使用 &lt;code&gt;[^1]&lt;/code&gt; 标记脚注，并在文末定义。&lt;/p&gt;
+&lt;/div&gt;&lt;h2 id=&#34;二内容组织与结构&#34;&gt;二、内容组织与结构
+&lt;/h2&gt;&lt;p&gt;使用这些元素来组织你的内容，使其更具逻辑性和可读性。&lt;/p&gt;
+&lt;h3 id=&#34;4-列表-lists&#34;&gt;4. 列表 (Lists)
+&lt;/h3&gt;&lt;h4 id=&#34;无序列表-unordered-list&#34;&gt;无序列表 (Unordered List)
+&lt;/h4&gt;&lt;p&gt;使用 &lt;code&gt;-&lt;/code&gt;、&lt;code&gt;*&lt;/code&gt; 或 &lt;code&gt;+&lt;/code&gt; 创建无序列表。通过缩进可以创建子列表。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;-&lt;/span&gt; 项目一
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;-&lt;/span&gt; 项目二
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;k&#34;&gt;-&lt;/span&gt; 子项目 A
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;k&#34;&gt;-&lt;/span&gt; 子项目 B
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h4 id=&#34;有序列表-ordered-list&#34;&gt;有序列表 (Ordered List)
+&lt;/h4&gt;&lt;p&gt;使用数字加 &lt;code&gt;.&lt;/code&gt; 创建有序列表。Markdown 会自动处理数字顺序。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;1.&lt;/span&gt; 第一步
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;2.&lt;/span&gt; 第二步
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;   &lt;span class=&#34;k&#34;&gt;1.&lt;/span&gt; 详细步骤 A
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;   &lt;span class=&#34;k&#34;&gt;2.&lt;/span&gt; 详细步骤 B
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;3.&lt;/span&gt; 第三步
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h3 id=&#34;5-任务列表-task-lists&#34;&gt;5. 任务列表 (Task Lists)
+&lt;/h3&gt;&lt;p&gt;非常适合用于展示待办事项或步骤清单。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;- [x]&lt;/span&gt; 已完成的任务
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;- [ ]&lt;/span&gt; 待办任务
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;- [ ]&lt;/span&gt; 另一个待办任务
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h3 id=&#34;6-引用-blockquotes&#34;&gt;6. 引用 (Blockquotes)
+&lt;/h3&gt;&lt;p&gt;使用 &lt;code&gt;&amp;gt;&lt;/code&gt; 来引用他人的话、书籍内容或突出显示某段引言。可以嵌套使用。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;&amp;gt; &lt;/span&gt;&lt;span class=&#34;ge&#34;&gt;“学如逆水行舟，不进则退。”
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;ge&#34;&gt;&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;&lt;/span&gt;&lt;span class=&#34;ge&#34;&gt;&amp;gt; &amp;gt; 这是一个嵌套引用，用于补充说明。
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h3 id=&#34;7-分割线-horizontal-rules&#34;&gt;7. 分割线 (Horizontal Rules)
+&lt;/h3&gt;&lt;p&gt;使用三个或更多的 &lt;code&gt;---&lt;/code&gt;、&lt;code&gt;***&lt;/code&gt; 或 &lt;code&gt;___&lt;/code&gt; 来创建一条水平分割线，用于在视觉上分隔内容区域。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;---
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h2 id=&#34;三链接与多媒体-&#34;&gt;三、链接与多媒体 🔗
+&lt;/h2&gt;&lt;h3 id=&#34;8-链接-links&#34;&gt;8. 链接 (Links)
+&lt;/h3&gt;&lt;p&gt;链接是博客文章中不可或缺的元素。&lt;/p&gt;
+&lt;h4 id=&#34;内嵌式链接-inline-links&#34;&gt;内嵌式链接 (Inline Links)
+&lt;/h4&gt;&lt;p&gt;这是最常见的链接形式。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;欢迎访问我的 [&lt;span class=&#34;nt&#34;&gt;个人博客&lt;/span&gt;](&lt;span class=&#34;na&#34;&gt;https://example.com &amp;#34;博客标题&amp;#34;&lt;/span&gt;)。
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h4 id=&#34;引用式链接-reference-links&#34;&gt;引用式链接 (Reference Links)
+&lt;/h4&gt;&lt;p&gt;当你在文章中多次引用同一个链接时，这种方式能让原文更整洁。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;这是一个 [引用链接][1] 的例子，这里是 [另一个][2]。
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;[1]: https://example.com &amp;#34;示例网站&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;[2]: https://anothersite.com &amp;#34;另一个网站&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h4 id=&#34;自动链接-automatic-links&#34;&gt;自动链接 (Automatic Links)
+&lt;/h4&gt;&lt;p&gt;大部分 Markdown 渲染器会自动将 URL 和邮箱地址转换为可点击的链接。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;https://google.com
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;user&lt;span class=&#34;ni&#34;&gt;@example&lt;/span&gt;.com
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h3 id=&#34;9-图片-images&#34;&gt;9. 图片 (Images)
+&lt;/h3&gt;&lt;p&gt;图片语法与链接非常相似，只是在前面多一个感叹号 &lt;code&gt;!&lt;/code&gt;。&lt;strong&gt;替代文本 (Alt text) 对 SEO 和可访问性至关重要&lt;/strong&gt;。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;![&lt;span class=&#34;nt&#34;&gt;替代文本：一只可爱的小猫&lt;/span&gt;](&lt;span class=&#34;na&#34;&gt;https://example.com/image.png &amp;#34;图片标题&amp;#34;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;同样可以使用引用式：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;![替代文本][logo]
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;[logo]: https://example.com/logo.png &amp;#34;网站 Logo&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h2 id=&#34;四代码与技术展示-&#34;&gt;四、代码与技术展示 💻
+&lt;/h2&gt;&lt;h3 id=&#34;10-行内代码-inline-code&#34;&gt;10. 行内代码 (Inline Code)
+&lt;/h3&gt;&lt;p&gt;使用反引号 &lt;code&gt;`&lt;/code&gt; 包裹简短的代码片段或命令。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;在 JavaScript 中，使用 &lt;span class=&#34;sb&#34;&gt;`console.log()`&lt;/span&gt; 来打印信息。
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h3 id=&#34;11-代码块-code-blocks&#34;&gt;11. 代码块 (Code Blocks)
+&lt;/h3&gt;&lt;p&gt;使用三个反引号 &lt;code&gt;```&lt;/code&gt; 包裹多行代码。强烈建议&lt;strong&gt;指定编程语言&lt;/strong&gt;以获得语法高亮。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s&#34;&gt;```python
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s&#34;&gt;&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;hello_world&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;():&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nb&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;Hello, World!&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;hello_world&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s&#34;&gt;```&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h3 id=&#34;12-表格-tables&#34;&gt;12. 表格 (Tables)
+&lt;/h3&gt;&lt;p&gt;创建结构化的数据表格。使用冒号 &lt;code&gt;:&lt;/code&gt; 来控制对齐方式。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;| 左对齐 | 居中对齐 | 右对齐 |
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;|:-------|:--------:|-------:|
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;| 单元格 |  单元格  | 单元格 |
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;| 单元格 |  单元格  | 单元格 |
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h2 id=&#34;五高级与扩展语法&#34;&gt;五、高级与扩展语法
+&lt;/h2&gt;&lt;p&gt;这些语法可能不被所有 Markdown 编辑器支持，但在多数现代博客平台上是可用的。&lt;/p&gt;
+&lt;h3 id=&#34;13-脚注-footnotes&#34;&gt;13. 脚注 (Footnotes)
+&lt;/h3&gt;&lt;p&gt;为文章添加补充说明，让正文保持简洁。&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -386,11 +518,11 @@ hh:mm：指定24小时制的小时和分钟后关机
 &lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;这是一个带有脚注的句子[^1]。
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;[^1]: 这是脚注的内容。
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;[^1]: 这是脚注的具体内容。
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;10-嵌套元素-nested-elements&#34;&gt;10. 嵌套元素 (Nested Elements)
-&lt;/h3&gt;&lt;p&gt;Markdown 支持元素的嵌套，例如列表中的引用或代码块。&lt;/p&gt;
+&lt;/div&gt;&lt;h3 id=&#34;14-定义列表-definition-lists&#34;&gt;14. 定义列表 (Definition Lists)
+&lt;/h3&gt;&lt;p&gt;用于解释一系列术语。&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
@@ -400,120 +532,50 @@ hh:mm：指定24小时制的小时和分钟后关机
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;1.&lt;/span&gt; 列表项包含引用：
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;   &amp;gt; &lt;/span&gt;&lt;span class=&#34;ge&#34;&gt;这是一个引用。
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;ge&#34;&gt;&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;2.&lt;/span&gt; 列表项包含代码块：
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;   ```bash
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;   echo &amp;#34;Hello, World!&amp;#34;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;### 11. 任务列表 (Task Lists)
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;可以创建任务列表，常用于 TODO 清单。
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;```markdown
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;- [x] 已完成的任务
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;- [ ] 待完成的任务
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;12-换行-line-breaks&#34;&gt;12. 换行 (Line Breaks)
-&lt;/h3&gt;&lt;p&gt;在 Markdown 中，行末使用两个或更多空格可以实现换行。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;这是第一行。  
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;这是第二行。
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;13-转义字符-escaping-characters&#34;&gt;13. 转义字符 (Escaping Characters)
-&lt;/h3&gt;&lt;p&gt;Markdown 中的特殊字符可以使用反斜杠 &lt;code&gt;\&lt;/code&gt; 进行转义。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;\*这是被转义的星号\*
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;14-内嵌-html-inline-html&#34;&gt;14. 内嵌 HTML (Inline HTML)
-&lt;/h3&gt;&lt;p&gt;Markdown 支持嵌入 HTML，但需注意部分平台可能不支持。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;lt;p&amp;gt;This is a paragraph in HTML.&amp;lt;/p&amp;gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;15-自动链接-automatic-links&#34;&gt;15. 自动链接 (Automatic Links)
-&lt;/h3&gt;&lt;p&gt;直接输入 URL 或电子邮件地址，会自动转为可点击的链接。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;https://example.com
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;16-定义列表-definition-lists&#34;&gt;16. 定义列表 (Definition Lists)
-&lt;/h3&gt;&lt;p&gt;虽然不是所有渲染器都支持，但部分 Markdown 扩展支持定义列表。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;术语
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;: 定义描述
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Markdown
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;: 一种轻量级标记语言。
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;术语二
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;: 另一个定义描述
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;HTML
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;: 超文本标记语言。
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;17-强调-strikethrough&#34;&gt;17. 强调 (Strikethrough)
-&lt;/h3&gt;&lt;p&gt;使用 &lt;code&gt;~~&lt;/code&gt; 包裹文字来表示删除线。&lt;/p&gt;
+&lt;/div&gt;&lt;h3 id=&#34;15-转义字符-escaping-characters&#34;&gt;15. 转义字符 (Escaping Characters)
+&lt;/h3&gt;&lt;p&gt;如果你想显示 Markdown 的特殊字符（如 &lt;code&gt;*&lt;/code&gt;、&lt;code&gt;#&lt;/code&gt;），可以在其前面加上反斜杠 &lt;code&gt;\&lt;/code&gt;。&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;~~这是一个删除线文本。~~
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;我想显示一个星号 \*，而不是让它变成斜体。
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;18-分割线-horizontal-rules&#34;&gt;18. 分割线 (Horizontal Rules)
-&lt;/h3&gt;&lt;p&gt;使用 &lt;code&gt;---&lt;/code&gt;、&lt;code&gt;***&lt;/code&gt; 或 &lt;code&gt;___&lt;/code&gt; 创建分割线。&lt;/p&gt;
+&lt;/div&gt;&lt;h3 id=&#34;16-内嵌-html-inline-html&#34;&gt;16. 内嵌 HTML (Inline HTML)
+&lt;/h3&gt;&lt;p&gt;Markdown 是 HTML 的超集，因此你可以直接在其中编写 HTML 代码来实现更复杂的布局（请谨慎使用）。&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;---
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;p&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;style&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;color:red;&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;这是一段红色的文字。&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;p&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;19-表情符号-emoji&#34;&gt;19. 表情符号 (Emoji)
-&lt;/h3&gt;&lt;p&gt;在支持的平台上，可以直接输入表情符号代码，例如 &lt;code&gt;:smile:&lt;/code&gt;。&lt;/p&gt;
+&lt;/div&gt;&lt;h3 id=&#34;17-表情符号-emoji&#34;&gt;17. 表情符号 (Emoji)
+&lt;/h3&gt;&lt;p&gt;在支持的平台上，可以直接使用 emoji 代码或直接粘贴表情符号。&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;这是一个笑脸 :smile:
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;写作真有趣！ :smile: 😄
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;hr&gt;
+&lt;p&gt;恭喜你！现在你已经掌握了 Markdown 的核心语法和高级技巧。通过在你的博客写作中运用这些格式，不仅可以大大提高写作效率，还能让你的文章结构更清晰、更具可读性。现在就动手尝试，享受 Markdown 带来的流畅写作体验吧！&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;</description>
         </item>

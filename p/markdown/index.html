@@ -284,58 +284,52 @@
         <div class="widget--toc">
             <nav id="TableOfContents">
   <ol>
-    <li>
+    <li><a href="#一基础文本格式化">一、基础文本格式化</a>
       <ol>
         <li><a href="#1-标题-headings">1. 标题 (Headings)</a></li>
+        <li><a href="#2-强调-emphasis">2. 强调 (Emphasis)</a></li>
+        <li><a href="#3-段落与换行-paragraphs--line-breaks">3. 段落与换行 (Paragraphs &amp; Line Breaks)</a></li>
       </ol>
     </li>
-  </ol>
-
-  <ol>
-    <li><a href="#二级标题">二级标题</a>
+    <li><a href="#二内容组织与结构">二、内容组织与结构</a>
       <ol>
-        <li><a href="#三级标题">三级标题</a>
-          <ol>
-            <li><a href="#四级标题">四级标题</a></li>
-          </ol>
-        </li>
-        <li><a href="#2-强调-emphasis">2. 强调 (Emphasis)</a>
-          <ol>
-            <li><a href="#斜体-italic">斜体 (Italic)</a></li>
-            <li><a href="#粗体-bold">粗体 (Bold)</a></li>
-            <li><a href="#粗斜体-bold-italic">粗斜体 (Bold Italic)</a></li>
-          </ol>
-        </li>
-        <li><a href="#3-列表-lists">3. 列表 (Lists)</a>
+        <li><a href="#4-列表-lists">4. 列表 (Lists)</a>
           <ol>
             <li><a href="#无序列表-unordered-list">无序列表 (Unordered List)</a></li>
             <li><a href="#有序列表-ordered-list">有序列表 (Ordered List)</a></li>
           </ol>
         </li>
-        <li><a href="#4-链接-links">4. 链接 (Links)</a>
-          <ol>
-            <li><a href="#内嵌链接-inline-links">内嵌链接 (Inline Links)</a></li>
-            <li><a href="#引用链接-reference-links">引用链接 (Reference Links)</a></li>
-          </ol>
-        </li>
-        <li><a href="#5-图片-images">5. 图片 (Images)</a></li>
+        <li><a href="#5-任务列表-task-lists">5. 任务列表 (Task Lists)</a></li>
         <li><a href="#6-引用-blockquotes">6. 引用 (Blockquotes)</a></li>
-        <li><a href="#7-代码-code">7. 代码 (Code)</a>
+        <li><a href="#7-分割线-horizontal-rules">7. 分割线 (Horizontal Rules)</a></li>
+      </ol>
+    </li>
+    <li><a href="#三链接与多媒体-">三、链接与多媒体 🔗</a>
+      <ol>
+        <li><a href="#8-链接-links">8. 链接 (Links)</a>
           <ol>
-            <li><a href="#行内代码-inline-code">行内代码 (Inline Code)</a></li>
-            <li><a href="#代码块-code-blocks">代码块 (Code Blocks)</a></li>
+            <li><a href="#内嵌式链接-inline-links">内嵌式链接 (Inline Links)</a></li>
+            <li><a href="#引用式链接-reference-links">引用式链接 (Reference Links)</a></li>
+            <li><a href="#自动链接-automatic-links">自动链接 (Automatic Links)</a></li>
           </ol>
         </li>
-        <li><a href="#9-脚注-footnotes">9. 脚注 (Footnotes)</a></li>
-        <li><a href="#10-嵌套元素-nested-elements">10. 嵌套元素 (Nested Elements)</a></li>
-        <li><a href="#12-换行-line-breaks">12. 换行 (Line Breaks)</a></li>
-        <li><a href="#13-转义字符-escaping-characters">13. 转义字符 (Escaping Characters)</a></li>
-        <li><a href="#14-内嵌-html-inline-html">14. 内嵌 HTML (Inline HTML)</a></li>
-        <li><a href="#15-自动链接-automatic-links">15. 自动链接 (Automatic Links)</a></li>
-        <li><a href="#16-定义列表-definition-lists">16. 定义列表 (Definition Lists)</a></li>
-        <li><a href="#17-强调-strikethrough">17. 强调 (Strikethrough)</a></li>
-        <li><a href="#18-分割线-horizontal-rules">18. 分割线 (Horizontal Rules)</a></li>
-        <li><a href="#19-表情符号-emoji">19. 表情符号 (Emoji)</a></li>
+        <li><a href="#9-图片-images">9. 图片 (Images)</a></li>
+      </ol>
+    </li>
+    <li><a href="#四代码与技术展示-">四、代码与技术展示 💻</a>
+      <ol>
+        <li><a href="#10-行内代码-inline-code">10. 行内代码 (Inline Code)</a></li>
+        <li><a href="#11-代码块-code-blocks">11. 代码块 (Code Blocks)</a></li>
+        <li><a href="#12-表格-tables">12. 表格 (Tables)</a></li>
+      </ol>
+    </li>
+    <li><a href="#五高级与扩展语法">五、高级与扩展语法</a>
+      <ol>
+        <li><a href="#13-脚注-footnotes">13. 脚注 (Footnotes)</a></li>
+        <li><a href="#14-定义列表-definition-lists">14. 定义列表 (Definition Lists)</a></li>
+        <li><a href="#15-转义字符-escaping-characters">15. 转义字符 (Escaping Characters)</a></li>
+        <li><a href="#16-内嵌-html-inline-html">16. 内嵌 HTML (Inline HTML)</a></li>
+        <li><a href="#17-表情符号-emoji">17. 表情符号 (Emoji)</a></li>
       </ol>
     </li>
   </ol>
@@ -422,7 +416,7 @@
 
 
                 <time class="article-time--reading">
-                    阅读时长: 3 分钟
+                    阅读时长: 4 分钟
                 </time>
             </div>
         
@@ -437,42 +431,15 @@
     <section class="article-content">
     
     
-    <h3 id="1-标题-headings">1. 标题 (Headings)
-</h3><p>使用 <code>#</code> 进行标题标记，支持1-6级标题。</p>
-<h1 id="一级标题">一级标题
-</h1><h2 id="二级标题">二级标题
-</h2><h3 id="三级标题">三级标题
-</h3><h4 id="四级标题">四级标题
-</h4><h5 id="五级标题">五级标题
-</h5><h6 id="六级标题">六级标题
-</h6><hr>
-<h3 id="2-强调-emphasis">2. 强调 (Emphasis)
-</h3><h4 id="斜体-italic">斜体 (Italic)
-</h4><p>使用 <code>*</code> 或 <code>_</code> 标记斜体。</p>
-<p><em>斜体文本</em> 或 <em>斜体文本</em></p>
-<h4 id="粗体-bold">粗体 (Bold)
-</h4><p>使用 <code>**</code> 或 <code>__</code> 标记粗体。</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="line"><span class="cl">**粗体文本** 或 <span class="gs">__粗体文本__</span>
-</span></span></code></pre></td></tr></table>
-</div>
-</div><h4 id="粗斜体-bold-italic">粗斜体 (Bold Italic)
-</h4><p>使用 <code>***</code> 或 <code>___</code> 同时标记粗体和斜体。</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="line"><span class="cl">***粗斜体文本*** 或 <span class="gs">___粗斜体文本___</span>
-</span></span></code></pre></td></tr></table>
-</div>
-</div><h3 id="3-列表-lists">3. 列表 (Lists)
-</h3><h4 id="无序列表-unordered-list">无序列表 (Unordered List)
-</h4><p>使用 <code>-</code>、<code>+</code> 或 <code>*</code> 标记无序列表。</p>
+    <p>当然！这是一份为你优化后的 Markdown 文档，旨在让你的博客文章结构更清晰、更具吸引力，并加入了一些实践建议。</p>
+<hr>
+<h1 id="markdown-博客格式化终极指南-">Markdown 博客格式化终极指南 ✍️
+</h1><p>你好！准备好让你的博客文章格式变得既专业又高效了吗？</p>
+<p>Markdown 是一种轻量级标记语言，让你能够使用易于阅读和编写的纯文本格式来撰写文档，然后将其转换为结构化的 HTML。这篇指南将涵盖从基础到高级的所有技巧，助你轻松掌握 Markdown，提升写作体验和文章可读性。让我们开始吧！</p>
+<h2 id="一基础文本格式化">一、基础文本格式化
+</h2><p>这些是构建文章内容的基本元素。</p>
+<h3 id="1-标题-headings">1. 标题 (Headings)
+</h3><p>使用 <code>#</code> 创建标题，一个 <code>#</code> 为一级标题，六个 <code>#</code> 为六级标题。为了 SEO 和文章结构清晰，<strong>建议每篇文章只使用一个一级标题 (<code>#</code>)</strong>。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -481,113 +448,53 @@
 </span><span class="lnt">4
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="line"><span class="cl"><span class="k">-</span> 项目1
-</span></span><span class="line"><span class="cl"><span class="k">-</span> 项目2
-</span></span><span class="line"><span class="cl">  <span class="k">-</span> 子项目1
-</span></span><span class="line"><span class="cl">  <span class="k">-</span> 子项目2
-</span></span></code></pre></td></tr></table>
-</div>
-</div><h4 id="有序列表-ordered-list">有序列表 (Ordered List)
-</h4><p>使用数字加 <code>.</code> 标记有序列表。</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="line"><span class="cl"><span class="k">1.</span> 项目1
-</span></span><span class="line"><span class="cl"><span class="k">2.</span> 项目2
-</span></span><span class="line"><span class="cl">   <span class="k">1.</span> 子项目1
-</span></span><span class="line"><span class="cl">   <span class="k">2.</span> 子项目2
-</span></span></code></pre></td></tr></table>
-</div>
-</div><h3 id="4-链接-links">4. 链接 (Links)
-</h3><h4 id="内嵌链接-inline-links">内嵌链接 (Inline Links)
-</h4><div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="line"><span class="cl">[<span class="nt">链接文本</span>](<span class="na">https://example.com</span>)
-</span></span></code></pre></td></tr></table>
-</div>
-</div><h4 id="引用链接-reference-links">引用链接 (Reference Links)
-</h4><div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="line"><span class="cl">这是一个 [引用链接][1] 的例子。
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">[1]: https://example.com &#34;Example&#34;
-</span></span></code></pre></td></tr></table>
-</div>
-</div><h3 id="5-图片-images">5. 图片 (Images)
-</h3><div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="line"><span class="cl">![<span class="nt">替代文本</span>](<span class="na">https://example.com/image.png</span>)
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>你还可以使用引用链接的方式插入图片。</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="line"><span class="cl">![替代文本][image1]
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">[image1]: https://example.com/image.png &#34;图片标题&#34;
-</span></span></code></pre></td></tr></table>
-</div>
-</div><h3 id="6-引用-blockquotes">6. 引用 (Blockquotes)
-</h3><p>使用 <code>&gt;</code> 表示引用，可以嵌套引用。</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="line"><span class="cl"><span class="k">&gt; </span><span class="ge">这是一个引用。
-</span></span></span><span class="line"><span class="cl"><span class="ge"></span><span class="k">&gt;
-</span></span></span><span class="line"><span class="cl"><span class="k"></span><span class="ge">&gt; &gt; 这是一个嵌套引用。
+<pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="line"><span class="cl"><span class="gh"># 这是一级标题 (文章主标题)
+</span></span></span><span class="line"><span class="cl"><span class="gh"></span><span class="gu">## 这是二级标题
+</span></span></span><span class="line"><span class="cl"><span class="gu">### 这是三级标题
+</span></span></span><span class="line"><span class="cl"><span class="gu">#### 这是四级标题
 </span></span></span></code></pre></td></tr></table>
 </div>
-</div><h3 id="7-代码-code">7. 代码 (Code)
-</h3><h4 id="行内代码-inline-code">行内代码 (Inline Code)
-</h4><p>使用 <code>`</code> 包裹行内代码。</p>
+</div><h3 id="2-强调-emphasis">2. 强调 (Emphasis)
+</h3><p>通过强调文本来吸引读者的注意力。</p>
+<ul>
+<li><strong>粗体</strong>：用于特别重要的关键词。</li>
+<li><strong>斜体</strong>：用于术语、引用或突出显示的词语。</li>
+<li><strong>删除线</strong>：用于表示已修正或不再相关的内容。</li>
+</ul>
+<!-- end list -->
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="line"><span class="cl">这是 <span class="sb">`行内代码`</span> 示例。
+<pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="line"><span class="cl">*这是斜体文本*
+</span></span><span class="line"><span class="cl"><span class="ge">_这也是斜体文本_</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="gs">**这是粗体文本**</span>
+</span></span><span class="line"><span class="cl"><span class="gs">__这也是粗体文本__</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="ge">**</span>*这是粗斜体文本***
+</span></span><span class="line"><span class="cl"><span class="gs">___这也是粗斜体文本___</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="gd">~~这是一个删除线文本~~</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h4 id="代码块-code-blocks">代码块 (Code Blocks)
-</h4><p>使用三个反引号 <code>```</code> 表示代码块，可以指定语言用于语法高亮。</p>
+</div><h3 id="3-段落与换行-paragraphs--line-breaks">3. 段落与换行 (Paragraphs &amp; Line Breaks)
+</h3><ul>
+<li><strong>新段落</strong>：在两行文本之间保留一个空行即可创建一个新段落。</li>
+<li><strong>强制换行</strong>：如果希望在不开始新段落的情况下换行，请在行末添加<strong>两个或更多空格</strong>。</li>
+</ul>
+<!-- end list -->
 <div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="line"><span class="cl">```python
-</span></span><span class="line"><span class="cl">def hello_world():
-</span></span><span class="line"><span class="cl">    print(&#34;Hello, World!&#34;)
-</span></span></code></pre></td></tr></table>
-</div>
-</div><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -596,21 +503,207 @@
 </span><span class="lnt">5
 </span><span class="lnt">6
 </span><span class="lnt">7
-</span><span class="lnt">8
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">### 8. 表格 (Tables)
-</span></span><span class="line"><span class="cl">Markdown 支持简单的表格布局，可以对齐表头。
-</span></span><span class="line"><span class="cl">```markdown
-</span></span><span class="line"><span class="cl">| 左对齐 | 居中对齐 | 右对齐 |
-</span></span><span class="line"><span class="cl">|:-------|:--------:|-------:|
-</span></span><span class="line"><span class="cl">| 单元格 | 单元格   | 单元格 |
-</span></span><span class="line"><span class="cl">| 单元格 | 单元格   | 单元格 |
+<pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="line"><span class="cl">这是第一行。
+</span></span><span class="line"><span class="cl">这是同一段落的第二行。
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">这是新段落的第一行。
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">这是第一行。  
+</span></span><span class="line"><span class="cl">这是紧接着的第二行（强制换行）。
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h3 id="9-脚注-footnotes">9. 脚注 (Footnotes)
-</h3><p>使用 <code>[^1]</code> 标记脚注，并在文末定义。</p>
+</div><h2 id="二内容组织与结构">二、内容组织与结构
+</h2><p>使用这些元素来组织你的内容，使其更具逻辑性和可读性。</p>
+<h3 id="4-列表-lists">4. 列表 (Lists)
+</h3><h4 id="无序列表-unordered-list">无序列表 (Unordered List)
+</h4><p>使用 <code>-</code>、<code>*</code> 或 <code>+</code> 创建无序列表。通过缩进可以创建子列表。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="line"><span class="cl"><span class="k">-</span> 项目一
+</span></span><span class="line"><span class="cl"><span class="k">-</span> 项目二
+</span></span><span class="line"><span class="cl">  <span class="k">-</span> 子项目 A
+</span></span><span class="line"><span class="cl">  <span class="k">-</span> 子项目 B
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h4 id="有序列表-ordered-list">有序列表 (Ordered List)
+</h4><p>使用数字加 <code>.</code> 创建有序列表。Markdown 会自动处理数字顺序。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="line"><span class="cl"><span class="k">1.</span> 第一步
+</span></span><span class="line"><span class="cl"><span class="k">2.</span> 第二步
+</span></span><span class="line"><span class="cl">   <span class="k">1.</span> 详细步骤 A
+</span></span><span class="line"><span class="cl">   <span class="k">2.</span> 详细步骤 B
+</span></span><span class="line"><span class="cl"><span class="k">3.</span> 第三步
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="5-任务列表-task-lists">5. 任务列表 (Task Lists)
+</h3><p>非常适合用于展示待办事项或步骤清单。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="line"><span class="cl"><span class="k">- [x]</span> 已完成的任务
+</span></span><span class="line"><span class="cl"><span class="k">- [ ]</span> 待办任务
+</span></span><span class="line"><span class="cl"><span class="k">- [ ]</span> 另一个待办任务
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="6-引用-blockquotes">6. 引用 (Blockquotes)
+</h3><p>使用 <code>&gt;</code> 来引用他人的话、书籍内容或突出显示某段引言。可以嵌套使用。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="line"><span class="cl"><span class="k">&gt; </span><span class="ge">“学如逆水行舟，不进则退。”
+</span></span></span><span class="line"><span class="cl"><span class="ge"></span><span class="k">&gt;
+</span></span></span><span class="line"><span class="cl"><span class="k"></span><span class="ge">&gt; &gt; 这是一个嵌套引用，用于补充说明。
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="7-分割线-horizontal-rules">7. 分割线 (Horizontal Rules)
+</h3><p>使用三个或更多的 <code>---</code>、<code>***</code> 或 <code>___</code> 来创建一条水平分割线，用于在视觉上分隔内容区域。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="line"><span class="cl">---
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="三链接与多媒体-">三、链接与多媒体 🔗
+</h2><h3 id="8-链接-links">8. 链接 (Links)
+</h3><p>链接是博客文章中不可或缺的元素。</p>
+<h4 id="内嵌式链接-inline-links">内嵌式链接 (Inline Links)
+</h4><p>这是最常见的链接形式。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="line"><span class="cl">欢迎访问我的 [<span class="nt">个人博客</span>](<span class="na">https://example.com &#34;博客标题&#34;</span>)。
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h4 id="引用式链接-reference-links">引用式链接 (Reference Links)
+</h4><p>当你在文章中多次引用同一个链接时，这种方式能让原文更整洁。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="line"><span class="cl">这是一个 [引用链接][1] 的例子，这里是 [另一个][2]。
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">[1]: https://example.com &#34;示例网站&#34;
+</span></span><span class="line"><span class="cl">[2]: https://anothersite.com &#34;另一个网站&#34;
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h4 id="自动链接-automatic-links">自动链接 (Automatic Links)
+</h4><p>大部分 Markdown 渲染器会自动将 URL 和邮箱地址转换为可点击的链接。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="line"><span class="cl">https://google.com
+</span></span><span class="line"><span class="cl">user<span class="ni">@example</span>.com
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="9-图片-images">9. 图片 (Images)
+</h3><p>图片语法与链接非常相似，只是在前面多一个感叹号 <code>!</code>。<strong>替代文本 (Alt text) 对 SEO 和可访问性至关重要</strong>。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="line"><span class="cl">![<span class="nt">替代文本：一只可爱的小猫</span>](<span class="na">https://example.com/image.png &#34;图片标题&#34;</span>)
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>同样可以使用引用式：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="line"><span class="cl">![替代文本][logo]
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">[logo]: https://example.com/logo.png &#34;网站 Logo&#34;
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="四代码与技术展示-">四、代码与技术展示 💻
+</h2><h3 id="10-行内代码-inline-code">10. 行内代码 (Inline Code)
+</h3><p>使用反引号 <code>`</code> 包裹简短的代码片段或命令。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="line"><span class="cl">在 JavaScript 中，使用 <span class="sb">`console.log()`</span> 来打印信息。
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="11-代码块-code-blocks">11. 代码块 (Code Blocks)
+</h3><p>使用三个反引号 <code>```</code> 包裹多行代码。强烈建议<strong>指定编程语言</strong>以获得语法高亮。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="line"><span class="cl"><span class="s">```python
+</span></span></span><span class="line"><span class="cl"><span class="s"></span><span class="k">def</span> <span class="nf">hello_world</span><span class="p">():</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;Hello, World!&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">hello_world</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="s">```</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="12-表格-tables">12. 表格 (Tables)
+</h3><p>创建结构化的数据表格。使用冒号 <code>:</code> 来控制对齐方式。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="line"><span class="cl">| 左对齐 | 居中对齐 | 右对齐 |
+</span></span><span class="line"><span class="cl">|:-------|:--------:|-------:|
+</span></span><span class="line"><span class="cl">| 单元格 |  单元格  | 单元格 |
+</span></span><span class="line"><span class="cl">| 单元格 |  单元格  | 单元格 |
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="五高级与扩展语法">五、高级与扩展语法
+</h2><p>这些语法可能不被所有 Markdown 编辑器支持，但在多数现代博客平台上是可用的。</p>
+<h3 id="13-脚注-footnotes">13. 脚注 (Footnotes)
+</h3><p>为文章添加补充说明，让正文保持简洁。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -620,11 +713,11 @@
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="line"><span class="cl">这是一个带有脚注的句子[^1]。
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">[^1]: 这是脚注的内容。
+</span></span><span class="line"><span class="cl">[^1]: 这是脚注的具体内容。
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h3 id="10-嵌套元素-nested-elements">10. 嵌套元素 (Nested Elements)
-</h3><p>Markdown 支持元素的嵌套，例如列表中的引用或代码块。</p>
+</div><h3 id="14-定义列表-definition-lists">14. 定义列表 (Definition Lists)
+</h3><p>用于解释一系列术语。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -634,120 +727,50 @@
 </span><span class="lnt">5
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="line"><span class="cl"><span class="k">1.</span> 列表项包含引用：
-</span></span><span class="line"><span class="cl"><span class="k">   &gt; </span><span class="ge">这是一个引用。
-</span></span></span><span class="line"><span class="cl"><span class="ge"></span><span class="k">2.</span> 列表项包含代码块：
-</span></span><span class="line"><span class="cl">   ```bash
-</span></span><span class="line"><span class="cl">   echo &#34;Hello, World!&#34;
-</span></span></code></pre></td></tr></table>
-</div>
-</div><div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span><span class="lnt">6
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">### 11. 任务列表 (Task Lists)
-</span></span><span class="line"><span class="cl">可以创建任务列表，常用于 TODO 清单。
-</span></span><span class="line"><span class="cl">```markdown
-</span></span><span class="line"><span class="cl">- [x] 已完成的任务
-</span></span><span class="line"><span class="cl">- [ ] 待完成的任务
-</span></span></code></pre></td></tr></table>
-</div>
-</div><h3 id="12-换行-line-breaks">12. 换行 (Line Breaks)
-</h3><p>在 Markdown 中，行末使用两个或更多空格可以实现换行。</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="line"><span class="cl">这是第一行。  
-</span></span><span class="line"><span class="cl">这是第二行。
-</span></span></code></pre></td></tr></table>
-</div>
-</div><h3 id="13-转义字符-escaping-characters">13. 转义字符 (Escaping Characters)
-</h3><p>Markdown 中的特殊字符可以使用反斜杠 <code>\</code> 进行转义。</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="line"><span class="cl">\*这是被转义的星号\*
-</span></span></code></pre></td></tr></table>
-</div>
-</div><h3 id="14-内嵌-html-inline-html">14. 内嵌 HTML (Inline HTML)
-</h3><p>Markdown 支持嵌入 HTML，但需注意部分平台可能不支持。</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="line"><span class="cl">&lt;p&gt;This is a paragraph in HTML.&lt;/p&gt;
-</span></span></code></pre></td></tr></table>
-</div>
-</div><h3 id="15-自动链接-automatic-links">15. 自动链接 (Automatic Links)
-</h3><p>直接输入 URL 或电子邮件地址，会自动转为可点击的链接。</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="line"><span class="cl">https://example.com
-</span></span></code></pre></td></tr></table>
-</div>
-</div><h3 id="16-定义列表-definition-lists">16. 定义列表 (Definition Lists)
-</h3><p>虽然不是所有渲染器都支持，但部分 Markdown 扩展支持定义列表。</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="line"><span class="cl">术语
-</span></span><span class="line"><span class="cl">: 定义描述
+<pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="line"><span class="cl">Markdown
+</span></span><span class="line"><span class="cl">: 一种轻量级标记语言。
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">术语二
-</span></span><span class="line"><span class="cl">: 另一个定义描述
+</span></span><span class="line"><span class="cl">HTML
+</span></span><span class="line"><span class="cl">: 超文本标记语言。
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h3 id="17-强调-strikethrough">17. 强调 (Strikethrough)
-</h3><p>使用 <code>~~</code> 包裹文字来表示删除线。</p>
+</div><h3 id="15-转义字符-escaping-characters">15. 转义字符 (Escaping Characters)
+</h3><p>如果你想显示 Markdown 的特殊字符（如 <code>*</code>、<code>#</code>），可以在其前面加上反斜杠 <code>\</code>。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="line"><span class="cl">~~这是一个删除线文本。~~
+<pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="line"><span class="cl">我想显示一个星号 \*，而不是让它变成斜体。
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h3 id="18-分割线-horizontal-rules">18. 分割线 (Horizontal Rules)
-</h3><p>使用 <code>---</code>、<code>***</code> 或 <code>___</code> 创建分割线。</p>
+</div><h3 id="16-内嵌-html-inline-html">16. 内嵌 HTML (Inline HTML)
+</h3><p>Markdown 是 HTML 的超集，因此你可以直接在其中编写 HTML 代码来实现更复杂的布局（请谨慎使用）。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="line"><span class="cl">---
+<pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">p</span> <span class="na">style</span><span class="o">=</span><span class="s">&#34;color:red;&#34;</span><span class="p">&gt;</span>这是一段红色的文字。<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h3 id="19-表情符号-emoji">19. 表情符号 (Emoji)
-</h3><p>在支持的平台上，可以直接输入表情符号代码，例如 <code>:smile:</code>。</p>
+</div><h3 id="17-表情符号-emoji">17. 表情符号 (Emoji)
+</h3><p>在支持的平台上，可以直接使用 emoji 代码或直接粘贴表情符号。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="line"><span class="cl">这是一个笑脸 :smile:
+<pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="line"><span class="cl">写作真有趣！ :smile: 😄
 </span></span></code></pre></td></tr></table>
+</div>
+</div><hr>
+<p>恭喜你！现在你已经掌握了 Markdown 的核心语法和高级技巧。通过在你的博客写作中运用这些格式，不仅可以大大提高写作效率，还能让你的文章结构更清晰、更具可读性。现在就动手尝试，享受 Markdown 带来的流畅写作体验吧！</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"></code></pre></td></tr></table>
 </div>
 </div>
 </section>
