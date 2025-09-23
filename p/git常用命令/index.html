@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="zh-cn" dir="ltr">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="Git">
+<title>Git常用命令</title>
+
+<link rel='canonical' href='https://yj.al/p/git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/'>
+
+<link rel="stylesheet" href="/scss/style.min.663803bebe609202d5b39d848f2d7c2dc8b598a2d879efa079fa88893d29c49c.css"><meta property='og:title' content="Git常用命令">
+<meta property='og:description' content="Git">
+<meta property='og:url' content='https://yj.al/p/git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/'>
+<meta property='og:site_name' content='遇见&amp;博客'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2025-09-09T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2025-09-09T00:00:00&#43;00:00'/><meta property='og:image' content='https://yj.al/p/git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/roman-synkevych-E-V6EMtGSUU-unsplash.jpg' />
+<meta name="twitter:title" content="Git常用命令">
+<meta name="twitter:description" content="Git"><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='https://yj.al/p/git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/roman-synkevych-E-V6EMtGSUU-unsplash.jpg' />
+    <link rel="shortcut icon" href="/favicon.ico" />
+
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="切换菜单">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_hu_e23786bd05b33a48.png" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+                    <span class="emoji">💌</span>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">遇见&amp;博客</a></h1>
+            <h2 class="site-description">人生，总有不期而遇的温暖，和生生不息的希望。</h2>
+        </div>
+    </header><ol class="menu-social">
+            
+                <li>
+                    <a 
+                        href='https://github.com/DeepOceanHappy'
+                        target="_blank"
+                        title="GitHub"
+                        rel="me"
+                    >
+                        
+                        
+                            <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21px" height="21px" viewBox="0 0 21 21" enable-background="new 0 0 21 21" xml:space="preserve">
+  <g id="icon">
+    <path d="M7.6997,16.7459c0.0048,1.0041,0.0153,2.4281,0.0153,2.7146" fill="none" stroke="#434A54" stroke-width="1" stroke-linecap="round" stroke-miterlimit="1" stroke-linejoin="round"/>
+    <path d="M13.3133,19.3949c0,-0.3777,0.0125,-2.4698,0.0125,-4.004c0,-1.0697,-0.3444,-1.7676,-0.7308,-2.1234c2.3993,-0.2838,4.92,-1.2536,4.92,-5.6577c0,-1.2519,-0.4181,-2.2748,-1.1089,-3.0778c0.1119,-0.2889,0.4808,-1.4551,-0.1056,-3.0345c0,0,-0.9036,-0.3082,-2.9602,1.1754c-0.8611,-0.2541,-1.9246,-0.3815,-2.8403,-0.3858c-0.9157,0.0043,-1.9785,0.1317,-2.8379,0.3858C5.6029,1.1894,4.6981,1.4976,4.6981,1.4976c-0.585,1.5794,-0.2162,2.7457,-0.1044,3.0345c-0.6893,0.803,-1.1102,1.8259,-1.1102,3.0778c0,4.3936,2.5159,5.3768,4.9092,5.6668c-0.3081,0.2863,-0.4464,2.3699,-0.5431,3.1111c-0.6149,0.2929,-2.1745,0.7997,-3.1355,-0.9533c0,0,-0.5697,-1.1007,-1.6518,-1.1817" fill="none" stroke="#434A54" stroke-width="1" stroke-linecap="round" stroke-miterlimit="1" stroke-linejoin="round"/>
+  </g>
+</svg>
+
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='https://exv.cc'
+                        target="_blank"
+                        title="komari"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg id="Flat" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+  <path d="M208,40.9209H48a22.02489,22.02489,0,0,0-22,22v112a22.02489,22.02489,0,0,0,22,22H208a22.02489,22.02489,0,0,0,22-22v-112A22.02489,22.02489,0,0,0,208,40.9209Zm10,134a10.01177,10.01177,0,0,1-10,10H48a10.01177,10.01177,0,0,1-10-10v-112a10.01177,10.01177,0,0,1,10-10H208a10.01177,10.01177,0,0,1,10,10Zm-52,48a6.00029,6.00029,0,0,1-6,6H96a6,6,0,1,1,0-12h64A6.00029,6.00029,0,0,1,166,222.9209Z"/>
+</svg>
+
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='https://t.me/DeepSeaHappy_Bot'
+                        target="_blank"
+                        title="Telegram"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg id="Flat" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+  <path d="M228.646,34.7676a11.96514,11.96514,0,0,0-12.21778-2.0752L31.87109,105.19729a11.99915,11.99915,0,0,0,2.03467,22.93457L84,138.15139v61.833a11.8137,11.8137,0,0,0,7.40771,11.08593,12.17148,12.17148,0,0,0,4.66846.94434,11.83219,11.83219,0,0,0,8.40918-3.5459l28.59619-28.59619L175.2749,217.003a11.89844,11.89844,0,0,0,7.88819,3.00195,12.112,12.112,0,0,0,3.72265-.59082,11.89762,11.89762,0,0,0,8.01319-8.73925L232.5127,46.542A11.97177,11.97177,0,0,0,228.646,34.7676ZM32.2749,116.71877a3.86572,3.86572,0,0,1,2.522-4.07617L203.97217,46.18044,87.07227,130.60769,35.47461,120.28811A3.86618,3.86618,0,0,1,32.2749,116.71877Zm66.55322,86.09375A3.99976,3.99976,0,0,1,92,199.9844V143.72048l35.064,30.85669ZM224.71484,44.7549,187.10107,208.88772a4.0003,4.0003,0,0,1-6.5415,2.10937l-86.1543-75.8164,129.66309-93.645A3.80732,3.80732,0,0,1,224.71484,44.7549Z"/>
+</svg>
+
+                        
+                    </a>
+                </li>
+            
+        </ol><ol class="menu" id="main-menu">
+        
+        
+        
+        <li >
+            <a href='/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>主页</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/%E5%85%B3%E4%BA%8E/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>关于</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/archives/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>Archives</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>Search</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/links/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+  <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+</svg>
+
+
+
+                
+                <span>Links</span>
+            </a>
+        </li>
+        
+        <li class="menu-bottom-section">
+            <ol class="menu">
+
+                
+                    <li id="dark-mode-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <span>暗色模式</span>
+                    </li>
+                
+            </ol>
+        </li>
+    </ol>
+</aside>
+
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">目录</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ol>
+    <li>
+      <ol>
+        <li><a href="#以下是一些最常用最基础的-git-命令它们能帮助你完成绝大部分日常开发任务">以下是一些最常用、最基础的 Git 命令，它们能帮助你完成绝大部分日常开发任务。</a>
+          <ol>
+            <li><a href="#入门与配置"><strong>入门与配置</strong></a></li>
+            <li><a href="#文件状态与提交"><strong>文件状态与提交</strong></a></li>
+            <li><a href="#分支操作"><strong>分支操作</strong></a></li>
+            <li><a href="#远程仓库"><strong>远程仓库</strong></a></li>
+            <li><a href="#查看历史记录"><strong>查看历史记录</strong></a></li>
+          </ol>
+        </li>
+      </ol>
+    </li>
+  </ol>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
+
+            <main class="main full-width">
+    <article class="has-image main-article">
+    <header class="article-header">
+        <div class="article-image">
+            <a href="/p/git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/">
+                <img src="/p/git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/roman-synkevych-E-V6EMtGSUU-unsplash_hu_dff2d281d4f39414.jpg"
+                        srcset="/p/git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/roman-synkevych-E-V6EMtGSUU-unsplash_hu_dff2d281d4f39414.jpg 800w, /p/git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/roman-synkevych-E-V6EMtGSUU-unsplash_hu_a4adb122c9be5e6e.jpg 1600w"
+                        width="800" 
+                        height="533" 
+                        loading="lazy"
+                        alt="Featured image of post Git常用命令" />
+                
+            </a>
+        </div>
+    
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/git/" >
+                Git
+            </a>
+        
+            <a href="/categories/%E5%91%BD%E4%BB%A4/" >
+                命令
+            </a>
+        
+    </header>
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/p/git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/">Git常用命令</a>
+        </h2>
+    
+        
+        <h3 class="article-subtitle">
+            Git
+        </h3>
+        
+    </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">Sep 09, 2025</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    阅读时长: 2 分钟
+                </time>
+            </div>
+        
+    </footer>
+    
+
+    
+</div>
+
+</header>
+
+    <section class="article-content">
+    
+    
+    <p>最常用：</p>
+<h3 id="以下是一些最常用最基础的-git-命令它们能帮助你完成绝大部分日常开发任务">以下是一些最常用、最基础的 Git 命令，它们能帮助你完成绝大部分日常开发任务。
+</h3><hr>
+<h4 id="入门与配置"><strong>入门与配置</strong>
+</h4><ul>
+<li>
+<p><code>git init</code></p>
+<ul>
+<li>在当前目录<strong>创建一个新的 Git 仓库</strong>。</li>
+</ul>
+</li>
+<li>
+<p><code>git clone [url]</code></p>
+<ul>
+<li><strong>克隆</strong>一个远程仓库到本地。</li>
+</ul>
+</li>
+<li>
+<p><code>git config --global user.name &quot;[name]&quot;</code></p>
+<ul>
+<li>为你的所有本地仓库设置你的<strong>用户名</strong>。</li>
+</ul>
+</li>
+<li>
+<p><code>git config --global user.email &quot;[email address]&quot;</code></p>
+<ul>
+<li>为你的所有本地仓库设置你的<strong>邮箱地址</strong>。</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h4 id="文件状态与提交"><strong>文件状态与提交</strong>
+</h4><ul>
+<li>
+<p><code>git status</code></p>
+<ul>
+<li><strong>查看</strong>当前仓库的状态，哪些文件被修改了，哪些是新的，哪些待提交。</li>
+</ul>
+</li>
+<li>
+<p><code>git add [file]</code></p>
+<ul>
+<li>将指定文件<strong>添加到暂存区</strong>（staging area），准备提交。</li>
+</ul>
+</li>
+<li>
+<p><code>git add .</code></p>
+<ul>
+<li>将所有修改过的和新创建的文件<strong>全部添加到暂存区</strong>。</li>
+</ul>
+</li>
+<li>
+<p><code>git commit -m &quot;[message]&quot;</code></p>
+<ul>
+<li><strong>提交</strong>暂存区中的文件，并附上提交信息。这是将更改永久保存到历史记录中的操作。</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h4 id="分支操作"><strong>分支操作</strong>
+</h4><ul>
+<li>
+<p><code>git branch</code></p>
+<ul>
+<li><strong>列出</strong>所有本地分支。</li>
+</ul>
+</li>
+<li>
+<p><code>git branch [branch-name]</code></p>
+<ul>
+<li><strong>创建</strong>一个新分支。</li>
+</ul>
+</li>
+<li>
+<p><code>git checkout [branch-name]</code></p>
+<ul>
+<li><strong>切换</strong>到指定分支。</li>
+</ul>
+</li>
+<li>
+<p><code>git checkout -b [new-branch-name]</code></p>
+<ul>
+<li>创建一个新分支并立即<strong>切换</strong>到该分支。</li>
+</ul>
+</li>
+<li>
+<p><code>git merge [branch-name]</code></p>
+<ul>
+<li>将指定分支的更改<strong>合并</strong>到当前分支。</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h4 id="远程仓库"><strong>远程仓库</strong>
+</h4><ul>
+<li>
+<p><code>git remote add origin [url]</code></p>
+<ul>
+<li><strong>关联</strong>一个远程仓库，并将其命名为 <code>origin</code>。</li>
+</ul>
+</li>
+<li>
+<p><code>git push -u origin [branch-name]</code></p>
+<ul>
+<li>将本地分支<strong>推送到</strong>远程仓库，并建立跟踪关系。</li>
+</ul>
+</li>
+<li>
+<p><code>git push</code></p>
+<ul>
+<li>将本地更改<strong>推送到</strong>远程仓库（在建立跟踪关系后使用）。</li>
+</ul>
+</li>
+<li>
+<p><code>git pull</code></p>
+<ul>
+<li>从远程仓库<strong>拉取</strong>最新更改并自动合并。</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h4 id="查看历史记录"><strong>查看历史记录</strong>
+</h4><ul>
+<li>
+<p><code>git log</code></p>
+<ul>
+<li><strong>查看</strong>提交历史。</li>
+</ul>
+</li>
+<li>
+<p><code>git log --oneline</code></p>
+<ul>
+<li>以<strong>简洁的单行</strong>模式查看提交历史。</li>
+</ul>
+</li>
+<li>
+<p><code>git diff</code></p>
+<ul>
+<li><strong>查看</strong>工作区和暂存区之间的差异。</li>
+</ul>
+</li>
+<li>
+<p><code>git diff --staged</code></p>
+<ul>
+<li><strong>查看</strong>暂存区和最新提交之间的差异。</li>
+</ul>
+</li>
+</ul>
+<p>掌握这些命令，你就能应对日常的大部分 Git 工作了。</p>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+
+    </footer>
+
+
+    
+</article>
+
+    
+
+    
+
+     
+    
+        
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+        2025 DeepSeaHappy
+    </section>
+    
+    <section class="powerby">
+        使用 <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> 构建 <br />
+        主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.31.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.1e9a3bafd846ced4c345d084b355fb8c7bae75701c338f8a1f8a82c780137826.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>

@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="zh-cn" dir="ltr">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="基础命令">
+<title>Linux常用命令记录</title>
+
+<link rel='canonical' href='https://yj.al/p/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/'>
+
+<link rel="stylesheet" href="/scss/style.min.663803bebe609202d5b39d848f2d7c2dc8b598a2d879efa079fa88893d29c49c.css"><meta property='og:title' content="Linux常用命令记录">
+<meta property='og:description' content="基础命令">
+<meta property='og:url' content='https://yj.al/p/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/'>
+<meta property='og:site_name' content='遇见&amp;博客'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2025-09-09T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2025-09-09T00:00:00&#43;00:00'/><meta property='og:image' content='https://yj.al/p/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/arian-darvishi-wh-RPfR_3_M-unsplash.jpg' />
+<meta name="twitter:title" content="Linux常用命令记录">
+<meta name="twitter:description" content="基础命令"><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='https://yj.al/p/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/arian-darvishi-wh-RPfR_3_M-unsplash.jpg' />
+    <link rel="shortcut icon" href="/favicon.ico" />
+
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="切换菜单">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_hu_e23786bd05b33a48.png" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+                    <span class="emoji">💌</span>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">遇见&amp;博客</a></h1>
+            <h2 class="site-description">人生，总有不期而遇的温暖，和生生不息的希望。</h2>
+        </div>
+    </header><ol class="menu-social">
+            
+                <li>
+                    <a 
+                        href='https://github.com/DeepOceanHappy'
+                        target="_blank"
+                        title="GitHub"
+                        rel="me"
+                    >
+                        
+                        
+                            <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21px" height="21px" viewBox="0 0 21 21" enable-background="new 0 0 21 21" xml:space="preserve">
+  <g id="icon">
+    <path d="M7.6997,16.7459c0.0048,1.0041,0.0153,2.4281,0.0153,2.7146" fill="none" stroke="#434A54" stroke-width="1" stroke-linecap="round" stroke-miterlimit="1" stroke-linejoin="round"/>
+    <path d="M13.3133,19.3949c0,-0.3777,0.0125,-2.4698,0.0125,-4.004c0,-1.0697,-0.3444,-1.7676,-0.7308,-2.1234c2.3993,-0.2838,4.92,-1.2536,4.92,-5.6577c0,-1.2519,-0.4181,-2.2748,-1.1089,-3.0778c0.1119,-0.2889,0.4808,-1.4551,-0.1056,-3.0345c0,0,-0.9036,-0.3082,-2.9602,1.1754c-0.8611,-0.2541,-1.9246,-0.3815,-2.8403,-0.3858c-0.9157,0.0043,-1.9785,0.1317,-2.8379,0.3858C5.6029,1.1894,4.6981,1.4976,4.6981,1.4976c-0.585,1.5794,-0.2162,2.7457,-0.1044,3.0345c-0.6893,0.803,-1.1102,1.8259,-1.1102,3.0778c0,4.3936,2.5159,5.3768,4.9092,5.6668c-0.3081,0.2863,-0.4464,2.3699,-0.5431,3.1111c-0.6149,0.2929,-2.1745,0.7997,-3.1355,-0.9533c0,0,-0.5697,-1.1007,-1.6518,-1.1817" fill="none" stroke="#434A54" stroke-width="1" stroke-linecap="round" stroke-miterlimit="1" stroke-linejoin="round"/>
+  </g>
+</svg>
+
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='https://exv.cc'
+                        target="_blank"
+                        title="komari"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg id="Flat" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+  <path d="M208,40.9209H48a22.02489,22.02489,0,0,0-22,22v112a22.02489,22.02489,0,0,0,22,22H208a22.02489,22.02489,0,0,0,22-22v-112A22.02489,22.02489,0,0,0,208,40.9209Zm10,134a10.01177,10.01177,0,0,1-10,10H48a10.01177,10.01177,0,0,1-10-10v-112a10.01177,10.01177,0,0,1,10-10H208a10.01177,10.01177,0,0,1,10,10Zm-52,48a6.00029,6.00029,0,0,1-6,6H96a6,6,0,1,1,0-12h64A6.00029,6.00029,0,0,1,166,222.9209Z"/>
+</svg>
+
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='https://t.me/DeepSeaHappy_Bot'
+                        target="_blank"
+                        title="Telegram"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg id="Flat" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+  <path d="M228.646,34.7676a11.96514,11.96514,0,0,0-12.21778-2.0752L31.87109,105.19729a11.99915,11.99915,0,0,0,2.03467,22.93457L84,138.15139v61.833a11.8137,11.8137,0,0,0,7.40771,11.08593,12.17148,12.17148,0,0,0,4.66846.94434,11.83219,11.83219,0,0,0,8.40918-3.5459l28.59619-28.59619L175.2749,217.003a11.89844,11.89844,0,0,0,7.88819,3.00195,12.112,12.112,0,0,0,3.72265-.59082,11.89762,11.89762,0,0,0,8.01319-8.73925L232.5127,46.542A11.97177,11.97177,0,0,0,228.646,34.7676ZM32.2749,116.71877a3.86572,3.86572,0,0,1,2.522-4.07617L203.97217,46.18044,87.07227,130.60769,35.47461,120.28811A3.86618,3.86618,0,0,1,32.2749,116.71877Zm66.55322,86.09375A3.99976,3.99976,0,0,1,92,199.9844V143.72048l35.064,30.85669ZM224.71484,44.7549,187.10107,208.88772a4.0003,4.0003,0,0,1-6.5415,2.10937l-86.1543-75.8164,129.66309-93.645A3.80732,3.80732,0,0,1,224.71484,44.7549Z"/>
+</svg>
+
+                        
+                    </a>
+                </li>
+            
+        </ol><ol class="menu" id="main-menu">
+        
+        
+        
+        <li >
+            <a href='/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>主页</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/%E5%85%B3%E4%BA%8E/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>关于</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/archives/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>Archives</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>Search</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/links/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+  <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+</svg>
+
+
+
+                
+                <span>Links</span>
+            </a>
+        </li>
+        
+        <li class="menu-bottom-section">
+            <ol class="menu">
+
+                
+                    <li id="dark-mode-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <span>暗色模式</span>
+                    </li>
+                
+            </ol>
+        </li>
+    </ol>
+</aside>
+
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">目录</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ol>
+    <li>
+      <ol>
+        <li><a href="#linux目录结构">linux目录结构</a></li>
+        <li><a href="#帮助命令">帮助命令</a>
+          <ol>
+            <li><a href="#man获取帮助信息">man：获取帮助信息</a></li>
+            <li><a href="#help获取shell内置帮助信息">help：获取shell内置帮助信息</a></li>
+          </ol>
+        </li>
+        <li><a href="#linux常用快捷键">linux常用快捷键</a>
+          <ol>
+            <li><a href="#ctrll--清屏">ctrl+l  清屏</a></li>
+            <li><a href="#ctrlq-退出">ctrl+q 退出</a></li>
+            <li><a href="#ctrlc-停止进程">ctrl+c 停止进程</a></li>
+            <li><a href="#上下键-查找曾经执行过的命令">上下键 查找曾经执行过的命令</a></li>
+            <li><a href="#tab-命令补全">Tab 命令补全</a></li>
+          </ol>
+        </li>
+        <li><a href="#目录相关命令">目录相关命令</a>
+          <ol>
+            <li><a href="#pwd-显示绝对路径">pwd 显示绝对路径</a></li>
+            <li><a href="#ls-列出目录下文件">ls 列出目录下文件</a></li>
+            <li><a href="#cd-切换到指定目录">cd 切换到指定目录</a></li>
+            <li><a href="#mkdir-创建指定目录">mkdir 创建指定目录</a></li>
+            <li><a href="#rmdir-删除空目录">rmdir 删除空目录</a></li>
+            <li><a href="#cp-复制目录或文件">cp 复制目录或文件</a></li>
+            <li><a href="#mv-移动或重命名文件">mv 移动或重命名文件</a></li>
+            <li><a href="#rm-删除文件或目录">rm 删除文件或目录</a></li>
+          </ol>
+        </li>
+        <li><a href="#文件相关命令">文件相关命令</a>
+          <ol>
+            <li><a href="#touch-创建空文件">touch 创建空文件</a></li>
+            <li><a href="#echo-输出字符串或变量值还可以搭配从定向符将内容存储到文件">echo 输出字符串或变量值，还可以搭配从定向符将内容存储到文件</a></li>
+            <li><a href="#cat-查看文件内容从第一行开始显示">cat 查看文件内容，从第一行开始显示</a></li>
+            <li><a href="#more-查看文件内容一页一页的显示">more 查看文件内容，一页一页的显示</a></li>
+            <li><a href="#head-查看文件内容只看头几行">head 查看文件内容，只看头几行</a></li>
+            <li><a href="#tail-查看文件内容只查看文件末尾几行">tail 查看文件内容，只查看文件末尾几行</a></li>
+            <li><a href="#wc-统计指定文本的行数字数字节数">wc 统计指定文本的行数、字数、字节数</a></li>
+            <li><a href="#stat-查看文件的具体存储信息和时间等信息">stat 查看文件的具体存储信息和时间等信息</a></li>
+            <li><a href="#file-查看文件类型">file 查看文件类型</a></li>
+            <li><a href="#wget-下载网络文件">wget 下载网络文件</a></li>
+          </ol>
+        </li>
+        <li><a href="#查找命令">查找命令</a>
+          <ol>
+            <li><a href="#find-查找文件或目录">find 查找文件或目录</a></li>
+            <li><a href="#grep-在文件内搜索字符串匹配的行并输出">grep 在文件内搜索字符串匹配的行并输出</a></li>
+            <li><a href="#which-搜索命令所在目录及别名信息">which 搜索命令所在目录及别名信息</a></li>
+          </ol>
+        </li>
+        <li><a href="#日期命令">日期命令</a>
+          <ol>
+            <li><a href="#date-显示或设置时间">date 显示或设置时间</a></li>
+          </ol>
+        </li>
+        <li><a href="#进程线程命令">进程线程命令</a>
+          <ol>
+            <li><a href="#ps-查看系统中所有进程">ps 查看系统中所有进程</a></li>
+            <li><a href="#top-查看系统健康状态">top 查看系统健康状态</a></li>
+            <li><a href="#kill-终止某个指定pid的服务进程">kill 终止某个指定pid的服务进程</a></li>
+          </ol>
+        </li>
+        <li><a href="#打包和压缩命令">打包和压缩命令</a>
+          <ol>
+            <li><a href="#tar-打包目录">tar 打包目录</a></li>
+            <li><a href="#zip和unzip-压缩和解压缩文件和目录">zip和unzip 压缩和解压缩文件和目录</a></li>
+            <li><a href="#gzip和gunzip-压缩和解压缩文件">gzip和gunzip 压缩和解压缩文件</a></li>
+          </ol>
+        </li>
+        <li><a href="#系统状态检测命令">系统状态检测命令</a>
+          <ol>
+            <li><a href="#ifconfig-获取网卡配置和网络状态信息">ifconfig 获取网卡配置和网络状态信息</a></li>
+            <li><a href="#netstat-显示整个系统目前网络情况">netstat 显示整个系统目前网络情况</a></li>
+            <li><a href="#uname-查看系统内核和系统版本等信息">uname 查看系统内核和系统版本等信息</a></li>
+            <li><a href="#uptime-查看系统负载信息">uptime 查看系统负载信息</a></li>
+            <li><a href="#free-查看当前系统内存使用信息">free 查看当前系统内存使用信息</a></li>
+            <li><a href="#who-查看当前登入主机的终端信息">who 查看当前登入主机的终端信息</a></li>
+            <li><a href="#last-系统登录的记录">last 系统登录的记录</a></li>
+            <li><a href="#history-历史执行过的命令">history 历史执行过的命令</a></li>
+          </ol>
+        </li>
+        <li><a href="#关机命令">关机命令</a>
+          <ol>
+            <li><a href="#reboot-重启">reboot 重启</a></li>
+            <li><a href="#power-off-关闭系统">power off 关闭系统</a></li>
+            <li><a href="#shutdown-关机">shutdown 关机</a></li>
+          </ol>
+        </li>
+        <li><a href="#yum常用命令">yum常用命令</a>
+          <ol>
+            <li><a href="#列出所有可更新的软件清单命令">列出所有可更新的软件清单命令</a></li>
+            <li><a href="#更新所有软件命令">更新所有软件命令</a></li>
+            <li><a href="#仅安装指定的软件命令">仅安装指定的软件命令</a></li>
+            <li><a href="#仅更新指定的软件命令">仅更新指定的软件命令</a></li>
+            <li><a href="#列出所有可安裝的软件清单命令">列出所有可安裝的软件清单命令</a></li>
+            <li><a href="#删除软件包命令">删除软件包命令</a></li>
+            <li><a href="#查找软件包命令">查找软件包命令</a></li>
+            <li><a href="#清除缓存命令">清除缓存命令</a></li>
+          </ol>
+        </li>
+      </ol>
+    </li>
+  </ol>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
+
+            <main class="main full-width">
+    <article class="has-image main-article">
+    <header class="article-header">
+        <div class="article-image">
+            <a href="/p/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/">
+                <img src="/p/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/arian-darvishi-wh-RPfR_3_M-unsplash_hu_db2cd907e410744e.jpg"
+                        srcset="/p/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/arian-darvishi-wh-RPfR_3_M-unsplash_hu_db2cd907e410744e.jpg 800w, /p/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/arian-darvishi-wh-RPfR_3_M-unsplash_hu_c32f7b0ecd50dd0a.jpg 1600w"
+                        width="800" 
+                        height="600" 
+                        loading="lazy"
+                        alt="Featured image of post Linux常用命令记录" />
+                
+            </a>
+        </div>
+    
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/%E4%BB%A3%E7%A0%81/" >
+                代码
+            </a>
+        
+            <a href="/categories/linux/" >
+                Linux
+            </a>
+        
+    </header>
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/p/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/">Linux常用命令记录</a>
+        </h2>
+    
+        
+        <h3 class="article-subtitle">
+            基础命令
+        </h3>
+        
+    </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">Sep 09, 2025</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    阅读时长: 4 分钟
+                </time>
+            </div>
+        
+    </footer>
+    
+
+    
+</div>
+
+</header>
+
+    <section class="article-content">
+    
+    
+    <h3 id="linux目录结构">linux目录结构
+</h3><p>/，根目录
+root，存放root用户的相关文件
+home，存放普通用户的相关文件
+bin，存放常用命令的目录，如vi，su
+sbin，要具有一定权限才可以使用命令
+mnt，默认挂载光驱和软驱的目录
+etc，存放配置的相关文件
+var，存放经常变化的文件，如网络连接的sock文件 、日志
+boot，存放引导系统启动的相关文件
+usr，安装一个软件的默认目录，相当于windows下的program files
+proc，这个目录是一个虚拟的目录，它是系统内存的映射，访问这个目录来获取系统信息
+srv ，service缩写。该目录存放一些服务启动之后需要提取的数据
+sys，这是linux2.6内核的一个很大的变化，该目录下安装了2.6内核中新出现的一个文件系统
+tmp，这个目录是用来存放一些临时文件的
+del，类似于windows的设备管理器，把所有的硬件用文件的形式存储
+media，系统提供该目录是为了让用户临时挂载别的文件系统的，我们可以将外部的存储挂载在/mnt/上，然后进入该目录就可以查看里面的内容了。
+opt，这是给主机额外安装软件所摆放，如安装oracle数据库就可放到该目录下默认为空。
+selinux，selinux是一种安全子系统，它能控制程序只能访问特定文件。 </p>
+<hr>
+<h3 id="帮助命令">帮助命令
+</h3><h4 id="man获取帮助信息">man：获取帮助信息
+</h4><h4 id="help获取shell内置帮助信息">help：获取shell内置帮助信息
+</h4><hr>
+<h3 id="linux常用快捷键">linux常用快捷键
+</h3><h4 id="ctrll--清屏">ctrl+l  清屏
+</h4><h4 id="ctrlq-退出">ctrl+q 退出
+</h4><h4 id="ctrlc-停止进程">ctrl+c 停止进程
+</h4><h4 id="上下键-查找曾经执行过的命令">上下键 查找曾经执行过的命令
+</h4><h4 id="tab-命令补全">Tab 命令补全
+</h4><hr>
+<h3 id="目录相关命令">目录相关命令
+</h3><h4 id="pwd-显示绝对路径">pwd 显示绝对路径
+</h4><h4 id="ls-列出目录下文件">ls 列出目录下文件
+</h4><blockquote>
+<p>-a 显示全部文件
+-l 简写ll,显示详细信息</p></blockquote>
+<h4 id="cd-切换到指定目录">cd 切换到指定目录
+</h4><blockquote>
+<p>相对路径 ./  ../  ~
+绝对路径 以/开头，唯一的路径</p></blockquote>
+<h4 id="mkdir-创建指定目录">mkdir 创建指定目录
+</h4><blockquote>
+<p>-p 创建多层</p></blockquote>
+<h4 id="rmdir-删除空目录">rmdir 删除空目录
+</h4><blockquote>
+<p>-p 删除多层</p></blockquote>
+<h4 id="cp-复制目录或文件">cp 复制目录或文件
+</h4><blockquote>
+<p>-r 递归复制整个文件夹</p></blockquote>
+<h4 id="mv-移动或重命名文件">mv 移动或重命名文件
+</h4><h4 id="rm-删除文件或目录">rm 删除文件或目录
+</h4><blockquote>
+<p>-f：force强制执行
+-r：recursive递归执行
+-rf：强制递归执行
+-f *： 删除所有文件</p></blockquote>
+<hr>
+<h3 id="文件相关命令">文件相关命令
+</h3><h4 id="touch-创建空文件">touch 创建空文件
+</h4><h4 id="echo-输出字符串或变量值还可以搭配从定向符将内容存储到文件">echo 输出字符串或变量值，还可以搭配从定向符将内容存储到文件
+</h4><h4 id="cat-查看文件内容从第一行开始显示">cat 查看文件内容，从第一行开始显示
+</h4><blockquote>
+<p>-A：列出特殊字符而非空白
+-b：列出行号，空白行不算行号
+-n：列出行号，空白行也会有行号
+-v：列出一些看不出来的特殊字符</p></blockquote>
+<h4 id="more-查看文件内容一页一页的显示">more 查看文件内容，一页一页的显示
+</h4><blockquote>
+<p>空格键（space）：向下翻一页
+enter：向下翻一行</p></blockquote>
+<h4 id="head-查看文件内容只看头几行">head 查看文件内容，只看头几行
+</h4><blockquote>
+<p> -n：查看头n行</p></blockquote>
+<h4 id="tail-查看文件内容只查看文件末尾几行">tail 查看文件内容，只查看文件末尾几行
+</h4><blockquote>
+<p> -n：末尾几行
+-f：follow输出文件修改的内容，用于追踪文件修改</p></blockquote>
+<h4 id="wc-统计指定文本的行数字数字节数">wc 统计指定文本的行数、字数、字节数
+</h4><h4 id="stat-查看文件的具体存储信息和时间等信息">stat 查看文件的具体存储信息和时间等信息
+</h4><h4 id="file-查看文件类型">file 查看文件类型
+</h4><h4 id="wget-下载网络文件">wget 下载网络文件
+</h4><blockquote>
+<p> -b：后台下载
+-P：下载到指定目录
+-O：指定一个文件名
+-c：断点续传
+-spider：测试下载链接</p></blockquote>
+<hr>
+<h3 id="查找命令">查找命令
+</h3><h4 id="find-查找文件或目录">find 查找文件或目录
+</h4><blockquote>
+<p> -name：按文件名称查找
+-user：按文件拥有者查找
+-size：根按文件大小查找文件（+n大于，-n小于，n等于）</p></blockquote>
+<h4 id="grep-在文件内搜索字符串匹配的行并输出">grep 在文件内搜索字符串匹配的行并输出
+</h4><blockquote>
+<p> -c：count只输出匹配行的计数
+-n：line-number</p></blockquote>
+<h4 id="which-搜索命令所在目录及别名信息">which 搜索命令所在目录及别名信息
+</h4><hr>
+<h3 id="日期命令">日期命令
+</h3><h4 id="date-显示或设置时间">date 显示或设置时间
+</h4><blockquote>
+<p>-s：set 以字符串格式设置时间
++%Y%m%d：显示当前年月日
+&ldquo;+%Y-%m-%d %H:%M:%S&rdquo;：显示当前年月日时分秒</p></blockquote>
+<hr>
+<h3 id="进程线程命令">进程线程命令
+</h3><h4 id="ps-查看系统中所有进程">ps 查看系统中所有进程
+</h4><blockquote>
+<p>-a：显示现行终端机下的所有程序
+-u：以用户为主的格式来显示程序状况
+-x： 显示所有程序，不以终端机来区分
+-aux | grep xxx：筛选查看进程</p></blockquote>
+<h4 id="top-查看系统健康状态">top 查看系统健康状态
+</h4><h4 id="kill-终止某个指定pid的服务进程">kill 终止某个指定pid的服务进程
+</h4><blockquote>
+<p>-9：强迫进程立即停止</p></blockquote>
+<hr>
+<h3 id="打包和压缩命令">打包和压缩命令
+</h3><h4 id="tar-打包目录">tar 打包目录
+</h4><blockquote>
+<p> -c：create生成.tar打包文件
+-x：extract解包.tar文件
+-v：verbose显示详细信息
+-f：file指定压缩后的文件名
+-z：打包同时压缩
+-C：解压到指定目录
+-zxvf：解压包
+-zcvf：打包</p></blockquote>
+<h4 id="zip和unzip-压缩和解压缩文件和目录">zip和unzip 压缩和解压缩文件和目录
+</h4><blockquote>
+<p>-r：递归压缩目录</p></blockquote>
+<h4 id="gzip和gunzip-压缩和解压缩文件">gzip和gunzip 压缩和解压缩文件
+</h4><hr>
+<h3 id="系统状态检测命令">系统状态检测命令
+</h3><h4 id="ifconfig-获取网卡配置和网络状态信息">ifconfig 获取网卡配置和网络状态信息
+</h4><h4 id="netstat-显示整个系统目前网络情况">netstat 显示整个系统目前网络情况
+</h4><blockquote>
+<p>-nplt 查看网络进程</p></blockquote>
+<h4 id="uname-查看系统内核和系统版本等信息">uname 查看系统内核和系统版本等信息
+</h4><h4 id="uptime-查看系统负载信息">uptime 查看系统负载信息
+</h4><h4 id="free-查看当前系统内存使用信息">free 查看当前系统内存使用信息
+</h4><h4 id="who-查看当前登入主机的终端信息">who 查看当前登入主机的终端信息
+</h4><h4 id="last-系统登录的记录">last 系统登录的记录
+</h4><h4 id="history-历史执行过的命令">history 历史执行过的命令
+</h4><hr>
+<h3 id="关机命令">关机命令
+</h3><h4 id="reboot-重启">reboot 重启
+</h4><h4 id="power-off-关闭系统">power off 关闭系统
+</h4><h4 id="shutdown-关机">shutdown 关机
+</h4><blockquote>
+<p>-h：关机
+-r：重启
+hh:mm：指定24小时制的小时和分钟后关机
++m：m分钟后关机(+1：默认值，1分钟后关机; +0：now，立刻关机)</p></blockquote>
+<h3 id="yum常用命令">yum常用命令
+</h3><h4 id="列出所有可更新的软件清单命令">列出所有可更新的软件清单命令
+</h4><blockquote>
+<p>yum check-update</p></blockquote>
+<h4 id="更新所有软件命令">更新所有软件命令
+</h4><blockquote>
+<p>yum update</p></blockquote>
+<h4 id="仅安装指定的软件命令">仅安装指定的软件命令
+</h4><blockquote>
+<p>yum install &lt;package_name&gt;</p></blockquote>
+<h4 id="仅更新指定的软件命令">仅更新指定的软件命令
+</h4><blockquote>
+<p>yum update &lt;package_name&gt;</p></blockquote>
+<h4 id="列出所有可安裝的软件清单命令">列出所有可安裝的软件清单命令
+</h4><blockquote>
+<p>yum list</p></blockquote>
+<h4 id="删除软件包命令">删除软件包命令
+</h4><blockquote>
+<p>yum remove &lt;package_name&gt;</p></blockquote>
+<h4 id="查找软件包命令">查找软件包命令
+</h4><blockquote>
+<p>yum search <keyword></p></blockquote>
+<h4 id="清除缓存命令">清除缓存命令
+</h4><blockquote>
+<p>yum clean packages: 清除缓存目录下的软件包</p></blockquote>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+
+    </footer>
+
+
+    
+</article>
+
+    
+
+    
+
+<aside class="related-content--wrapper">
+    <h2 class="section-title">相关文章</h2>
+    <div class="related-content">
+        <div class="flex article-list--tile">
+            
+                
+<article class="has-image">
+    <a href="/p/markdown/">
+        
+        
+            <div class="article-image">
+                <img src="/p/markdown/kate-bezzubets-QyZlJZWavz0-unsplash.c1156ed95a04e5319f8f6f5c3f7be5dc_hu_fac4ee4f9e7c30f5.jpg" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post Markdown用法"
+                        data-key="markdown" 
+                        data-hash="md5-wRVu2VoE5TGfj29cP3vl3A==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Markdown用法</h2>
+        </div>
+    </a>
+</article>
+
+            
+        </div>
+    </div>
+</aside>
+
+     
+    
+        
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+        2025 DeepSeaHappy
+    </section>
+    
+    <section class="powerby">
+        使用 <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> 构建 <br />
+        主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.31.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.1e9a3bafd846ced4c345d084b355fb8c7bae75701c338f8a1f8a82c780137826.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>
