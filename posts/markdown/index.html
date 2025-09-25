@@ -1,0 +1,1012 @@
+<!DOCTYPE html>
+<html lang="zh-cn" dir="ltr">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="Markdown">
+<title>Markdown用法</title>
+
+<link rel='canonical' href='https://yj.al/posts/markdown/'>
+
+<link rel="stylesheet" href="/scss/style.min.663803bebe609202d5b39d848f2d7c2dc8b598a2d879efa079fa88893d29c49c.css"><meta property='og:title' content="Markdown用法">
+<meta property='og:description' content="Markdown">
+<meta property='og:url' content='https://yj.al/posts/markdown/'>
+<meta property='og:site_name' content='遇见&amp;博客'>
+<meta property='og:type' content='article'><meta property='article:section' content='Posts' /><meta property='article:published_time' content='2025-09-19T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2025-09-19T00:00:00&#43;00:00'/><meta property='og:image' content='https://yj.al/posts/markdown/kate-bezzubets-QyZlJZWavz0-unsplash.jpg' />
+<meta name="twitter:title" content="Markdown用法">
+<meta name="twitter:description" content="Markdown"><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='https://yj.al/posts/markdown/kate-bezzubets-QyZlJZWavz0-unsplash.jpg' />
+    <link rel="shortcut icon" href="/favicon.ico" />
+
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="切换菜单">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_hu_e23786bd05b33a48.png" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+                    <span class="emoji">💌</span>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">遇见&amp;博客</a></h1>
+            <h2 class="site-description">人生，总有不期而遇的温暖，和生生不息的希望。</h2>
+        </div>
+    </header><ol class="menu-social">
+            
+                <li>
+                    <a 
+                        href='https://github.com/DeepOceanHappy'
+                        target="_blank"
+                        title="GitHub"
+                        rel="me"
+                    >
+                        
+                        
+                            <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21px" height="21px" viewBox="0 0 21 21" enable-background="new 0 0 21 21" xml:space="preserve">
+  <g id="icon">
+    <path d="M7.6997,16.7459c0.0048,1.0041,0.0153,2.4281,0.0153,2.7146" fill="none" stroke="#434A54" stroke-width="1" stroke-linecap="round" stroke-miterlimit="1" stroke-linejoin="round"/>
+    <path d="M13.3133,19.3949c0,-0.3777,0.0125,-2.4698,0.0125,-4.004c0,-1.0697,-0.3444,-1.7676,-0.7308,-2.1234c2.3993,-0.2838,4.92,-1.2536,4.92,-5.6577c0,-1.2519,-0.4181,-2.2748,-1.1089,-3.0778c0.1119,-0.2889,0.4808,-1.4551,-0.1056,-3.0345c0,0,-0.9036,-0.3082,-2.9602,1.1754c-0.8611,-0.2541,-1.9246,-0.3815,-2.8403,-0.3858c-0.9157,0.0043,-1.9785,0.1317,-2.8379,0.3858C5.6029,1.1894,4.6981,1.4976,4.6981,1.4976c-0.585,1.5794,-0.2162,2.7457,-0.1044,3.0345c-0.6893,0.803,-1.1102,1.8259,-1.1102,3.0778c0,4.3936,2.5159,5.3768,4.9092,5.6668c-0.3081,0.2863,-0.4464,2.3699,-0.5431,3.1111c-0.6149,0.2929,-2.1745,0.7997,-3.1355,-0.9533c0,0,-0.5697,-1.1007,-1.6518,-1.1817" fill="none" stroke="#434A54" stroke-width="1" stroke-linecap="round" stroke-miterlimit="1" stroke-linejoin="round"/>
+  </g>
+</svg>
+
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='https://exv.cc'
+                        target="_blank"
+                        title="komari"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg id="Flat" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+  <path d="M208,40.9209H48a22.02489,22.02489,0,0,0-22,22v112a22.02489,22.02489,0,0,0,22,22H208a22.02489,22.02489,0,0,0,22-22v-112A22.02489,22.02489,0,0,0,208,40.9209Zm10,134a10.01177,10.01177,0,0,1-10,10H48a10.01177,10.01177,0,0,1-10-10v-112a10.01177,10.01177,0,0,1,10-10H208a10.01177,10.01177,0,0,1,10,10Zm-52,48a6.00029,6.00029,0,0,1-6,6H96a6,6,0,1,1,0-12h64A6.00029,6.00029,0,0,1,166,222.9209Z"/>
+</svg>
+
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='https://t.me/DeepSeaHappy_Bot'
+                        target="_blank"
+                        title="Telegram"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg id="Flat" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+  <path d="M228.646,34.7676a11.96514,11.96514,0,0,0-12.21778-2.0752L31.87109,105.19729a11.99915,11.99915,0,0,0,2.03467,22.93457L84,138.15139v61.833a11.8137,11.8137,0,0,0,7.40771,11.08593,12.17148,12.17148,0,0,0,4.66846.94434,11.83219,11.83219,0,0,0,8.40918-3.5459l28.59619-28.59619L175.2749,217.003a11.89844,11.89844,0,0,0,7.88819,3.00195,12.112,12.112,0,0,0,3.72265-.59082,11.89762,11.89762,0,0,0,8.01319-8.73925L232.5127,46.542A11.97177,11.97177,0,0,0,228.646,34.7676ZM32.2749,116.71877a3.86572,3.86572,0,0,1,2.522-4.07617L203.97217,46.18044,87.07227,130.60769,35.47461,120.28811A3.86618,3.86618,0,0,1,32.2749,116.71877Zm66.55322,86.09375A3.99976,3.99976,0,0,1,92,199.9844V143.72048l35.064,30.85669ZM224.71484,44.7549,187.10107,208.88772a4.0003,4.0003,0,0,1-6.5415,2.10937l-86.1543-75.8164,129.66309-93.645A3.80732,3.80732,0,0,1,224.71484,44.7549Z"/>
+</svg>
+
+                        
+                    </a>
+                </li>
+            
+        </ol><ol class="menu" id="main-menu">
+        
+        
+        
+        <li >
+            <a href='/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>主页</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/%E5%85%B3%E4%BA%8E/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>关于</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/archives/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>Archives</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>Search</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/links/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+  <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+</svg>
+
+
+
+                
+                <span>Links</span>
+            </a>
+        </li>
+        
+        <li class="menu-bottom-section">
+            <ol class="menu">
+
+                
+                    <li id="dark-mode-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <span>暗色模式</span>
+                    </li>
+                
+            </ol>
+        </li>
+    </ol>
+</aside>
+
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">目录</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ol>
+    <li><a href="#一基础文本格式化">一、基础文本格式化</a>
+      <ol>
+        <li><a href="#1-标题-headings">1. 标题 (Headings)</a></li>
+        <li><a href="#2-强调-emphasis">2. 强调 (Emphasis)</a></li>
+        <li><a href="#3-段落与换行-paragraphs--line-breaks">3. 段落与换行 (Paragraphs &amp; Line Breaks)</a></li>
+      </ol>
+    </li>
+    <li><a href="#二内容组织与结构">二、内容组织与结构</a>
+      <ol>
+        <li><a href="#4-列表-lists">4. 列表 (Lists)</a>
+          <ol>
+            <li><a href="#无序列表-unordered-list">无序列表 (Unordered List)</a></li>
+            <li><a href="#有序列表-ordered-list">有序列表 (Ordered List)</a></li>
+          </ol>
+        </li>
+        <li><a href="#5-任务列表-task-lists">5. 任务列表 (Task Lists)</a></li>
+        <li><a href="#6-引用-blockquotes">6. 引用 (Blockquotes)</a></li>
+        <li><a href="#7-分割线-horizontal-rules">7. 分割线 (Horizontal Rules)</a></li>
+      </ol>
+    </li>
+    <li><a href="#三链接与多媒体-">三、链接与多媒体 🔗</a>
+      <ol>
+        <li><a href="#8-链接-links">8. 链接 (Links)</a>
+          <ol>
+            <li><a href="#内嵌式链接-inline-links">内嵌式链接 (Inline Links)</a></li>
+            <li><a href="#引用式链接-reference-links">引用式链接 (Reference Links)</a></li>
+            <li><a href="#自动链接-automatic-links">自动链接 (Automatic Links)</a></li>
+          </ol>
+        </li>
+        <li><a href="#9-图片-images">9. 图片 (Images)</a></li>
+      </ol>
+    </li>
+    <li><a href="#四代码与技术展示-">四、代码与技术展示 💻</a>
+      <ol>
+        <li><a href="#10-行内代码-inline-code">10. 行内代码 (Inline Code)</a></li>
+        <li><a href="#11-代码块-code-blocks">11. 代码块 (Code Blocks)</a></li>
+        <li><a href="#12-表格-tables">12. 表格 (Tables)</a></li>
+      </ol>
+    </li>
+    <li><a href="#五高级与扩展语法">五、高级与扩展语法</a>
+      <ol>
+        <li><a href="#13-脚注-footnotes">13. 脚注 (Footnotes)</a></li>
+        <li><a href="#14-定义列表-definition-lists">14. 定义列表 (Definition Lists)</a></li>
+        <li><a href="#15-转义字符-escaping-characters">15. 转义字符 (Escaping Characters)</a></li>
+        <li><a href="#16-内嵌-html-inline-html">16. 内嵌 HTML (Inline HTML)</a></li>
+        <li><a href="#17-表情符号-emoji">17. 表情符号 (Emoji)</a></li>
+      </ol>
+    </li>
+  </ol>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
+
+            <main class="main full-width">
+    <article class="has-image main-article">
+    <header class="article-header">
+        <div class="article-image">
+            <a href="/posts/markdown/">
+                <img src="/posts/markdown/kate-bezzubets-QyZlJZWavz0-unsplash_hu_499f1e3c713d2f52.jpg"
+                        srcset="/posts/markdown/kate-bezzubets-QyZlJZWavz0-unsplash_hu_499f1e3c713d2f52.jpg 800w, /posts/markdown/kate-bezzubets-QyZlJZWavz0-unsplash_hu_18e1c8e977e5e2e1.jpg 1600w"
+                        width="800" 
+                        height="530" 
+                        loading="lazy"
+                        alt="Featured image of post Markdown用法" />
+                
+            </a>
+        </div>
+    
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/%E4%BB%A3%E7%A0%81/" >
+                代码
+            </a>
+        
+            <a href="/categories/markdown/" >
+                Markdown
+            </a>
+        
+    </header>
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/posts/markdown/">Markdown用法</a>
+        </h2>
+    
+        
+        <h3 class="article-subtitle">
+            Markdown
+        </h3>
+        
+    </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">Sep 19, 2025</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    阅读时长: 4 分钟
+                </time>
+            </div>
+        
+    </footer>
+    
+
+    
+</div>
+
+</header>
+
+    <section class="article-content">
+    
+    
+    <h1 id="markdown-博客格式化终极指南-">Markdown 博客格式化终极指南 ✍️
+</h1><p>你好！准备好让你的博客文章格式变得既专业又高效了吗？</p>
+<p>Markdown 是一种轻量级标记语言，让你能够使用易于阅读和编写的纯文本格式来撰写文档，然后将其转换为结构化的 HTML。这篇指南将涵盖从基础到高级的所有技巧，助你轻松掌握 Markdown，提升写作体验和文章可读性。让我们开始吧！</p>
+<h2 id="一基础文本格式化">一、基础文本格式化
+</h2><p>这些是构建文章内容的基本元素。</p>
+<h3 id="1-标题-headings">1. 标题 (Headings)
+</h3><p>使用 <code>#</code> 创建标题，一个 <code>#</code> 为一级标题，六个 <code>#</code> 为六级标题。为了 SEO 和文章结构清晰，<strong>建议每篇文章只使用一个一级标题 (<code>#</code>)</strong>。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="line"><span class="cl"><span class="gh"># 这是一级标题 (文章主标题)
+</span></span></span><span class="line"><span class="cl"><span class="gh"></span><span class="gu">## 这是二级标题
+</span></span></span><span class="line"><span class="cl"><span class="gu">### 这是三级标题
+</span></span></span><span class="line"><span class="cl"><span class="gu">#### 这是四级标题
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="2-强调-emphasis">2. 强调 (Emphasis)
+</h3><p>通过强调文本来吸引读者的注意力。</p>
+<ul>
+<li><strong>粗体</strong>：用于特别重要的关键词。</li>
+<li><strong>斜体</strong>：用于术语、引用或突出显示的词语。</li>
+<li><strong>删除线</strong>：用于表示已修正或不再相关的内容。</li>
+</ul>
+<!-- end list -->
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="line"><span class="cl">*这是斜体文本*
+</span></span><span class="line"><span class="cl"><span class="ge">_这也是斜体文本_</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="gs">**这是粗体文本**</span>
+</span></span><span class="line"><span class="cl"><span class="gs">__这也是粗体文本__</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="ge">**</span>*这是粗斜体文本***
+</span></span><span class="line"><span class="cl"><span class="gs">___这也是粗斜体文本___</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="gd">~~这是一个删除线文本~~</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="3-段落与换行-paragraphs--line-breaks">3. 段落与换行 (Paragraphs &amp; Line Breaks)
+</h3><ul>
+<li><strong>新段落</strong>：在两行文本之间保留一个空行即可创建一个新段落。</li>
+<li><strong>强制换行</strong>：如果希望在不开始新段落的情况下换行，请在行末添加<strong>两个或更多空格</strong>。</li>
+</ul>
+<!-- end list -->
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="line"><span class="cl">这是第一行。
+</span></span><span class="line"><span class="cl">这是同一段落的第二行。
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">这是新段落的第一行。
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">这是第一行。  
+</span></span><span class="line"><span class="cl">这是紧接着的第二行（强制换行）。
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="二内容组织与结构">二、内容组织与结构
+</h2><p>使用这些元素来组织你的内容，使其更具逻辑性和可读性。</p>
+<h3 id="4-列表-lists">4. 列表 (Lists)
+</h3><h4 id="无序列表-unordered-list">无序列表 (Unordered List)
+</h4><p>使用 <code>-</code>、<code>*</code> 或 <code>+</code> 创建无序列表。通过缩进可以创建子列表。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="line"><span class="cl"><span class="k">-</span> 项目一
+</span></span><span class="line"><span class="cl"><span class="k">-</span> 项目二
+</span></span><span class="line"><span class="cl">  <span class="k">-</span> 子项目 A
+</span></span><span class="line"><span class="cl">  <span class="k">-</span> 子项目 B
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h4 id="有序列表-ordered-list">有序列表 (Ordered List)
+</h4><p>使用数字加 <code>.</code> 创建有序列表。Markdown 会自动处理数字顺序。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="line"><span class="cl"><span class="k">1.</span> 第一步
+</span></span><span class="line"><span class="cl"><span class="k">2.</span> 第二步
+</span></span><span class="line"><span class="cl">   <span class="k">1.</span> 详细步骤 A
+</span></span><span class="line"><span class="cl">   <span class="k">2.</span> 详细步骤 B
+</span></span><span class="line"><span class="cl"><span class="k">3.</span> 第三步
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="5-任务列表-task-lists">5. 任务列表 (Task Lists)
+</h3><p>非常适合用于展示待办事项或步骤清单。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="line"><span class="cl"><span class="k">- [x]</span> 已完成的任务
+</span></span><span class="line"><span class="cl"><span class="k">- [ ]</span> 待办任务
+</span></span><span class="line"><span class="cl"><span class="k">- [ ]</span> 另一个待办任务
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="6-引用-blockquotes">6. 引用 (Blockquotes)
+</h3><p>使用 <code>&gt;</code> 来引用他人的话、书籍内容或突出显示某段引言。可以嵌套使用。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="line"><span class="cl"><span class="k">&gt; </span><span class="ge">“学如逆水行舟，不进则退。”
+</span></span></span><span class="line"><span class="cl"><span class="ge"></span><span class="k">&gt;
+</span></span></span><span class="line"><span class="cl"><span class="k"></span><span class="ge">&gt; &gt; 这是一个嵌套引用，用于补充说明。
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="7-分割线-horizontal-rules">7. 分割线 (Horizontal Rules)
+</h3><p>使用三个或更多的 <code>---</code>、<code>***</code> 或 <code>___</code> 来创建一条水平分割线，用于在视觉上分隔内容区域。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="line"><span class="cl">---
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="三链接与多媒体-">三、链接与多媒体 🔗
+</h2><h3 id="8-链接-links">8. 链接 (Links)
+</h3><p>链接是博客文章中不可或缺的元素。</p>
+<h4 id="内嵌式链接-inline-links">内嵌式链接 (Inline Links)
+</h4><p>这是最常见的链接形式。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="line"><span class="cl">欢迎访问我的 [<span class="nt">个人博客</span>](<span class="na">https://example.com &#34;博客标题&#34;</span>)。
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h4 id="引用式链接-reference-links">引用式链接 (Reference Links)
+</h4><p>当你在文章中多次引用同一个链接时，这种方式能让原文更整洁。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="line"><span class="cl">这是一个 [引用链接][1] 的例子，这里是 [另一个][2]。
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">[1]: https://example.com &#34;示例网站&#34;
+</span></span><span class="line"><span class="cl">[2]: https://anothersite.com &#34;另一个网站&#34;
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h4 id="自动链接-automatic-links">自动链接 (Automatic Links)
+</h4><p>大部分 Markdown 渲染器会自动将 URL 和邮箱地址转换为可点击的链接。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="line"><span class="cl">https://google.com
+</span></span><span class="line"><span class="cl">user<span class="ni">@example</span>.com
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="9-图片-images">9. 图片 (Images)
+</h3><p>图片语法与链接非常相似，只是在前面多一个感叹号 <code>!</code>。<strong>替代文本 (Alt text) 对 SEO 和可访问性至关重要</strong>。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="line"><span class="cl">![<span class="nt">替代文本：一只可爱的小猫</span>](<span class="na">https://example.com/image.png &#34;图片标题&#34;</span>)
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>同样可以使用引用式：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="line"><span class="cl">![替代文本][logo]
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">[logo]: https://example.com/logo.png &#34;网站 Logo&#34;
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="四代码与技术展示-">四、代码与技术展示 💻
+</h2><h3 id="10-行内代码-inline-code">10. 行内代码 (Inline Code)
+</h3><p>使用反引号 <code>`</code> 包裹简短的代码片段或命令。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="line"><span class="cl">在 JavaScript 中，使用 <span class="sb">`console.log()`</span> 来打印信息。
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="11-代码块-code-blocks">11. 代码块 (Code Blocks)
+</h3><p>使用三个反引号 <code>```</code> 包裹多行代码。强烈建议<strong>指定编程语言</strong>以获得语法高亮。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="line"><span class="cl"><span class="s">```python
+</span></span></span><span class="line"><span class="cl"><span class="s"></span><span class="k">def</span> <span class="nf">hello_world</span><span class="p">():</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;Hello, World!&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">hello_world</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="s">```</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="12-表格-tables">12. 表格 (Tables)
+</h3><p>创建结构化的数据表格。使用冒号 <code>:</code> 来控制对齐方式。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="line"><span class="cl">| 左对齐 | 居中对齐 | 右对齐 |
+</span></span><span class="line"><span class="cl">|:-------|:--------:|-------:|
+</span></span><span class="line"><span class="cl">| 单元格 |  单元格  | 单元格 |
+</span></span><span class="line"><span class="cl">| 单元格 |  单元格  | 单元格 |
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="五高级与扩展语法">五、高级与扩展语法
+</h2><p>这些语法可能不被所有 Markdown 编辑器支持，但在多数现代博客平台上是可用的。</p>
+<h3 id="13-脚注-footnotes">13. 脚注 (Footnotes)
+</h3><p>为文章添加补充说明，让正文保持简洁。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="line"><span class="cl">这是一个带有脚注的句子[^1]。
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">[^1]: 这是脚注的具体内容。
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="14-定义列表-definition-lists">14. 定义列表 (Definition Lists)
+</h3><p>用于解释一系列术语。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="line"><span class="cl">Markdown
+</span></span><span class="line"><span class="cl">: 一种轻量级标记语言。
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">HTML
+</span></span><span class="line"><span class="cl">: 超文本标记语言。
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="15-转义字符-escaping-characters">15. 转义字符 (Escaping Characters)
+</h3><p>如果你想显示 Markdown 的特殊字符（如 <code>*</code>、<code>#</code>），可以在其前面加上反斜杠 <code>\</code>。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="line"><span class="cl">我想显示一个星号 \*，而不是让它变成斜体。
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="16-内嵌-html-inline-html">16. 内嵌 HTML (Inline HTML)
+</h3><p>Markdown 是 HTML 的超集，因此你可以直接在其中编写 HTML 代码来实现更复杂的布局（请谨慎使用）。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">p</span> <span class="na">style</span><span class="o">=</span><span class="s">&#34;color:red;&#34;</span><span class="p">&gt;</span>这是一段红色的文字。<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="17-表情符号-emoji">17. 表情符号 (Emoji)
+</h3><p>在支持的平台上，可以直接使用 emoji 代码或直接粘贴表情符号。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="line"><span class="cl">写作真有趣！ :smile: 😄
+</span></span></code></pre></td></tr></table>
+</div>
+</div><hr>
+<p>恭喜你！现在你已经掌握了 Markdown 的核心语法和高级技巧。通过在你的博客写作中运用这些格式，不仅可以大大提高写作效率，还能让你的文章结构更清晰、更具可读性。现在就动手尝试，享受 Markdown 带来的流畅写作体验吧！</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"></code></pre></td></tr></table>
+</div>
+</div>
+</section>
+
+
+    <footer class="article-footer">
+    
+
+    </footer>
+
+
+    
+</article>
+
+    
+
+    
+
+<aside class="related-content--wrapper">
+    <h2 class="section-title">相关文章</h2>
+    <div class="related-content">
+        <div class="flex article-list--tile">
+            
+                
+<article class="has-image">
+    <a href="/p/markdown/">
+        
+        
+            <div class="article-image">
+                <img src="/p/markdown/kate-bezzubets-QyZlJZWavz0-unsplash.c1156ed95a04e5319f8f6f5c3f7be5dc_hu_fac4ee4f9e7c30f5.jpg" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post Markdown用法"
+                        data-key="markdown" 
+                        data-hash="md5-wRVu2VoE5TGfj29cP3vl3A==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Markdown用法</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/posts/%E9%83%A8%E7%BD%B2hugo/">
+        
+        
+            <div class="article-image">
+                <img src="/posts/%E9%83%A8%E7%BD%B2hugo/thought-catalog-505eectW54k-unsplash.0c8effb6d60e7d8c22e6976fdf5fd686_hu_2f7adc5defb7efd.jpg" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post Vercel部署Hugo博客"
+                        data-key="部署Hugo" 
+                        data-hash="md5-DI7/ttYOfYwi5pdv31/Whg==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Vercel部署Hugo博客</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/posts/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/">
+        
+        
+            <div class="article-image">
+                <img src="/posts/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/arian-darvishi-wh-RPfR_3_M-unsplash.03926231c70b2c5e0e74a877ca0d3632_hu_166a7ee96bdeb5c1.jpg" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post Linux常用命令记录"
+                        data-key="Linux常用命令" 
+                        data-hash="md5-A5JiMccLLF4OdKh3yg02Mg==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Linux常用命令记录</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/p/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/">
+        
+        
+            <div class="article-image">
+                <img src="/p/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/arian-darvishi-wh-RPfR_3_M-unsplash.03926231c70b2c5e0e74a877ca0d3632_hu_166a7ee96bdeb5c1.jpg" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post Linux常用命令记录"
+                        data-key="Linux常用命令" 
+                        data-hash="md5-A5JiMccLLF4OdKh3yg02Mg==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Linux常用命令记录</h2>
+        </div>
+    </a>
+</article>
+
+            
+        </div>
+    </div>
+</aside>
+
+     
+    
+        
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+        2025 DeepSeaHappy
+    </section>
+    
+    <section class="powerby">
+        使用 <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> 构建 <br />
+        主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.31.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.1e9a3bafd846ced4c345d084b355fb8c7bae75701c338f8a1f8a82c780137826.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>

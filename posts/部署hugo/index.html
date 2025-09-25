@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html lang="zh-cn" dir="ltr">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="Hugo静态博客">
+<title>Vercel部署Hugo博客</title>
+
+<link rel='canonical' href='https://yj.al/posts/%E9%83%A8%E7%BD%B2hugo/'>
+
+<link rel="stylesheet" href="/scss/style.min.663803bebe609202d5b39d848f2d7c2dc8b598a2d879efa079fa88893d29c49c.css"><meta property='og:title' content="Vercel部署Hugo博客">
+<meta property='og:description' content="Hugo静态博客">
+<meta property='og:url' content='https://yj.al/posts/%E9%83%A8%E7%BD%B2hugo/'>
+<meta property='og:site_name' content='遇见&amp;博客'>
+<meta property='og:type' content='article'><meta property='article:section' content='Posts' /><meta property='article:published_time' content='2025-09-25T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2025-09-25T00:00:00&#43;00:00'/><meta property='og:image' content='https://yj.al/posts/%E9%83%A8%E7%BD%B2hugo/thought-catalog-505eectW54k-unsplash.jpg' />
+<meta name="twitter:title" content="Vercel部署Hugo博客">
+<meta name="twitter:description" content="Hugo静态博客"><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='https://yj.al/posts/%E9%83%A8%E7%BD%B2hugo/thought-catalog-505eectW54k-unsplash.jpg' />
+    <link rel="shortcut icon" href="/favicon.ico" />
+
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="切换菜单">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_hu_e23786bd05b33a48.png" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+                    <span class="emoji">💌</span>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">遇见&amp;博客</a></h1>
+            <h2 class="site-description">人生，总有不期而遇的温暖，和生生不息的希望。</h2>
+        </div>
+    </header><ol class="menu-social">
+            
+                <li>
+                    <a 
+                        href='https://github.com/DeepOceanHappy'
+                        target="_blank"
+                        title="GitHub"
+                        rel="me"
+                    >
+                        
+                        
+                            <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21px" height="21px" viewBox="0 0 21 21" enable-background="new 0 0 21 21" xml:space="preserve">
+  <g id="icon">
+    <path d="M7.6997,16.7459c0.0048,1.0041,0.0153,2.4281,0.0153,2.7146" fill="none" stroke="#434A54" stroke-width="1" stroke-linecap="round" stroke-miterlimit="1" stroke-linejoin="round"/>
+    <path d="M13.3133,19.3949c0,-0.3777,0.0125,-2.4698,0.0125,-4.004c0,-1.0697,-0.3444,-1.7676,-0.7308,-2.1234c2.3993,-0.2838,4.92,-1.2536,4.92,-5.6577c0,-1.2519,-0.4181,-2.2748,-1.1089,-3.0778c0.1119,-0.2889,0.4808,-1.4551,-0.1056,-3.0345c0,0,-0.9036,-0.3082,-2.9602,1.1754c-0.8611,-0.2541,-1.9246,-0.3815,-2.8403,-0.3858c-0.9157,0.0043,-1.9785,0.1317,-2.8379,0.3858C5.6029,1.1894,4.6981,1.4976,4.6981,1.4976c-0.585,1.5794,-0.2162,2.7457,-0.1044,3.0345c-0.6893,0.803,-1.1102,1.8259,-1.1102,3.0778c0,4.3936,2.5159,5.3768,4.9092,5.6668c-0.3081,0.2863,-0.4464,2.3699,-0.5431,3.1111c-0.6149,0.2929,-2.1745,0.7997,-3.1355,-0.9533c0,0,-0.5697,-1.1007,-1.6518,-1.1817" fill="none" stroke="#434A54" stroke-width="1" stroke-linecap="round" stroke-miterlimit="1" stroke-linejoin="round"/>
+  </g>
+</svg>
+
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='https://exv.cc'
+                        target="_blank"
+                        title="komari"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg id="Flat" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+  <path d="M208,40.9209H48a22.02489,22.02489,0,0,0-22,22v112a22.02489,22.02489,0,0,0,22,22H208a22.02489,22.02489,0,0,0,22-22v-112A22.02489,22.02489,0,0,0,208,40.9209Zm10,134a10.01177,10.01177,0,0,1-10,10H48a10.01177,10.01177,0,0,1-10-10v-112a10.01177,10.01177,0,0,1,10-10H208a10.01177,10.01177,0,0,1,10,10Zm-52,48a6.00029,6.00029,0,0,1-6,6H96a6,6,0,1,1,0-12h64A6.00029,6.00029,0,0,1,166,222.9209Z"/>
+</svg>
+
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='https://t.me/DeepSeaHappy_Bot'
+                        target="_blank"
+                        title="Telegram"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg id="Flat" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+  <path d="M228.646,34.7676a11.96514,11.96514,0,0,0-12.21778-2.0752L31.87109,105.19729a11.99915,11.99915,0,0,0,2.03467,22.93457L84,138.15139v61.833a11.8137,11.8137,0,0,0,7.40771,11.08593,12.17148,12.17148,0,0,0,4.66846.94434,11.83219,11.83219,0,0,0,8.40918-3.5459l28.59619-28.59619L175.2749,217.003a11.89844,11.89844,0,0,0,7.88819,3.00195,12.112,12.112,0,0,0,3.72265-.59082,11.89762,11.89762,0,0,0,8.01319-8.73925L232.5127,46.542A11.97177,11.97177,0,0,0,228.646,34.7676ZM32.2749,116.71877a3.86572,3.86572,0,0,1,2.522-4.07617L203.97217,46.18044,87.07227,130.60769,35.47461,120.28811A3.86618,3.86618,0,0,1,32.2749,116.71877Zm66.55322,86.09375A3.99976,3.99976,0,0,1,92,199.9844V143.72048l35.064,30.85669ZM224.71484,44.7549,187.10107,208.88772a4.0003,4.0003,0,0,1-6.5415,2.10937l-86.1543-75.8164,129.66309-93.645A3.80732,3.80732,0,0,1,224.71484,44.7549Z"/>
+</svg>
+
+                        
+                    </a>
+                </li>
+            
+        </ol><ol class="menu" id="main-menu">
+        
+        
+        
+        <li >
+            <a href='/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>主页</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/%E5%85%B3%E4%BA%8E/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>关于</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/archives/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>Archives</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>Search</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/links/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+  <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+</svg>
+
+
+
+                
+                <span>Links</span>
+            </a>
+        </li>
+        
+        <li class="menu-bottom-section">
+            <ol class="menu">
+
+                
+                    <li id="dark-mode-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <span>暗色模式</span>
+                    </li>
+                
+            </ol>
+        </li>
+    </ol>
+</aside>
+
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">目录</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ol>
+    <li>
+      <ol>
+        <li><a href="#一环境准备">一、环境准备</a>
+          <ol>
+            <li><a href="#1安装go">1.安装go</a></li>
+            <li><a href="#2安装git">2.安装Git</a></li>
+            <li><a href="#3下载hugo最新版">3.下载Hugo最新版</a></li>
+            <li><a href="#4配置git绑定github">4.配置Git绑定github</a></li>
+            <li><a href="#5生成rsa密钥">5.生成rsa密钥</a></li>
+            <li><a href="#6进入github后台ssh绑定rsa密钥并验证">6.进入Github后台ssh绑定rsa密钥并验证</a></li>
+            <li><a href="#7临时代理">7.临时代理</a></li>
+          </ol>
+        </li>
+        <li><a href="#二开始安装">二、开始安装</a>
+          <ol>
+            <li><a href="#1-进入hugoexe目录新建网站blog2">1. 进入hugo.exe目录，新建网站blog2</a></li>
+            <li><a href="#2进入blog2目录">2.进入blog2目录</a></li>
+            <li><a href="#3在当前目录中初始化一个空的-git-仓库">3.在当前目录中初始化一个空的 Git 仓库</a></li>
+            <li><a href="#4将papermod主题克隆到themes目录中将其作为git-子模块添加到您的项目中">4.将 [PaperMod] 主题克隆到 <code>themes</code> 目录中，将其作为 Git 子模块添加到您的项目中</a></li>
+            <li><a href="#5向网站配置文件中添加一行指明当前主题">5.向网站配置文件中添加一行，指明当前主题。</a></li>
+            <li><a href="#6启动-hugo-的开发服务器以查看网站">6.启动 Hugo 的开发服务器以查看网站</a></li>
+          </ol>
+        </li>
+        <li><a href="#三添加内容">三、添加内容</a>
+          <ol>
+            <li><a href="#1添加新页面到您的网站">1.添加新页面到您的网站</a></li>
+            <li><a href="#2hugo-在contentposts目录中创建了文件用您的编辑器打开该文件">2.Hugo 在 <code>content/posts</code> 目录中创建了文件。用您的编辑器打开该文件</a></li>
+            <li><a href="#3在帖子的正文中添加一些markdown但不要更改draft的值">3.在帖子的正文中添加一些 Markdown，但不要更改 <code>draft</code> 的值。</a></li>
+            <li><a href="#4保存文件然后启动hugo的开发服务器以查看网站您可以使用以下任一命令来包含草稿内容">4.保存文件，然后启动Hugo的开发服务器以查看网站。您可以使用以下任一命令来包含草稿内容。</a></li>
+          </ol>
+        </li>
+        <li><a href="#四部署到github">四、部署到Github</a>
+          <ol>
+            <li><a href="#1发布网站-d带草稿发布">1.发布网站(-D带草稿发布)</a></li>
+            <li><a href="#2进入public目录">2.进入public目录</a></li>
+            <li><a href="#3此目录新建git仓库">3.此目录新建git仓库</a></li>
+            <li><a href="#4将所有修改过的和新创建的文件全部添加到暂存区">4.将所有修改过的和新创建的文件全部添加到暂存区</a></li>
+            <li><a href="#5提交暂存区中的文件并附上提交信息这是将更改永久保存到历史记录中的操作">5.<strong>提交</strong>暂存区中的文件，并附上提交信息。这是将更改永久保存到历史记录中的操作。</a></li>
+            <li><a href="#6关联一个远程仓库并将其命名为-origin">6.<strong>关联</strong>一个远程仓库，并将其命名为 <code>origin</code></a></li>
+            <li><a href="#7将本地分支推送到远程仓库并建立跟踪关系">7.将本地分支<strong>推送到</strong>远程仓库，并建立跟踪关系。</a></li>
+          </ol>
+        </li>
+      </ol>
+    </li>
+  </ol>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
+
+            <main class="main full-width">
+    <article class="has-image main-article">
+    <header class="article-header">
+        <div class="article-image">
+            <a href="/posts/%E9%83%A8%E7%BD%B2hugo/">
+                <img src="/posts/%E9%83%A8%E7%BD%B2hugo/thought-catalog-505eectW54k-unsplash_hu_8efb03e80e87ca3c.jpg"
+                        srcset="/posts/%E9%83%A8%E7%BD%B2hugo/thought-catalog-505eectW54k-unsplash_hu_8efb03e80e87ca3c.jpg 800w, /posts/%E9%83%A8%E7%BD%B2hugo/thought-catalog-505eectW54k-unsplash_hu_3084d79709c885b.jpg 1600w"
+                        width="800" 
+                        height="600" 
+                        loading="lazy"
+                        alt="Featured image of post Vercel部署Hugo博客" />
+                
+            </a>
+        </div>
+    
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/%E6%95%99%E7%A8%8B/" >
+                教程
+            </a>
+        
+            <a href="/categories/hugo/" >
+                Hugo
+            </a>
+        
+            <a href="/categories/%E4%BB%A3%E7%A0%81/" >
+                代码
+            </a>
+        
+    </header>
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/posts/%E9%83%A8%E7%BD%B2hugo/">Vercel部署Hugo博客</a>
+        </h2>
+    
+        
+        <h3 class="article-subtitle">
+            Hugo静态博客
+        </h3>
+        
+    </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">Sep 25, 2025</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    阅读时长: 2 分钟
+                </time>
+            </div>
+        
+    </footer>
+    
+
+    
+</div>
+
+</header>
+
+    <section class="article-content">
+    
+    
+    <h3 id="一环境准备">一、环境准备
+</h3><h4 id="1安装go">1.安装go
+</h4><blockquote>
+<p><a class="link" href="https://go.dev/doc/install"  target="_blank" rel="noopener"
+    >https://go.dev/doc/install</a></p></blockquote>
+<h4 id="2安装git">2.安装Git
+</h4><blockquote>
+<p><a class="link" href="https://git-scm.com/downloads"  target="_blank" rel="noopener"
+    >https://git-scm.com/downloads</a></p></blockquote>
+<h4 id="3下载hugo最新版">3.下载Hugo最新版
+</h4><blockquote>
+<p><a class="link" href="https://github.com/gohugoio/hugo/releases/download/v0.150.0/hugo_extended_withdeploy_0.150.0_windows-amd64.zip"  target="_blank" rel="noopener"
+    >hugo_extended_withdeploy_0.150.0_windows-amd64.zip</a>
+#注意下载extended_withdeploy版本</p></blockquote>
+<h4 id="4配置git绑定github">4.配置Git绑定github
+</h4><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">git config --global user.name &#34;Github用户名&#34;
+</span></span><span class="line"><span class="cl">git config --global user.email &#34;Github邮箱&#34;
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h4 id="5生成rsa密钥">5.生成rsa密钥
+</h4><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">ssh-keygen -t rsa -C &#34;Github邮箱&#34;
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h4 id="6进入github后台ssh绑定rsa密钥并验证">6.进入Github后台ssh绑定rsa密钥并验证
+</h4><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">ssh -T git@github.com
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h4 id="7临时代理">7.临时代理
+</h4><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-gdscript3" data-lang="gdscript3"><span class="line"><span class="cl"><span class="k">export</span> <span class="n">ALL_PROXY</span><span class="o">=</span><span class="s2">&#34;socks5://127.0.0.1:10808&#34;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="二开始安装">二、开始安装
+</h3><h4 id="1-进入hugoexe目录新建网站blog2">1. 进入hugo.exe目录，新建网站blog2
+</h4><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">hugo new site blog2
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h4 id="2进入blog2目录">2.进入blog2目录
+</h4><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">cd blog2
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h4 id="3在当前目录中初始化一个空的-git-仓库">3.在当前目录中初始化一个空的 Git 仓库
+</h4><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">git init
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h4 id="4将papermod主题克隆到themes目录中将其作为git-子模块添加到您的项目中">4.将 [<a class="link" href="https://github.com/adityatelange/hugo-PaperMod"  target="_blank" rel="noopener"
+    >PaperMod</a>] 主题克隆到 <code>themes</code> 目录中，将其作为 Git 子模块添加到您的项目中
+</h4><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">git submodule add https://github.com/adityatelange/hugo-PaperMod.git themes/PaperMod
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h4 id="5向网站配置文件中添加一行指明当前主题">5.向网站配置文件中添加一行，指明当前主题。
+</h4><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">echo &#34;theme = &#39;PaperMod&#39;&#34; &gt;&gt; hugo.toml
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h4 id="6启动-hugo-的开发服务器以查看网站">6.启动 Hugo 的开发服务器以查看网站
+</h4><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">hugo server -D
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="三添加内容">三、添加内容
+</h3><h4 id="1添加新页面到您的网站">1.添加新页面到您的网站
+</h4><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">hugo new content content/posts/my-first-post.md
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h4 id="2hugo-在contentposts目录中创建了文件用您的编辑器打开该文件">2.Hugo 在 <code>content/posts</code> 目录中创建了文件。用您的编辑器打开该文件
+</h4><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">---
+</span></span><span class="line"><span class="cl">title: 中文测试
+</span></span><span class="line"><span class="cl">description: 这是一篇杂谈
+</span></span><span class="line"><span class="cl">date: 2025-09-26
+</span></span><span class="line"><span class="cl">slug: Vercel部署Hugo
+</span></span><span class="line"><span class="cl">image: helena-hertz-wWZzXlDpMog-unsplash.jpg
+</span></span><span class="line"><span class="cl">categories:
+</span></span><span class="line"><span class="cl">    - 中文
+</span></span><span class="line"><span class="cl">    - 随笔
+</span></span><span class="line"><span class="cl">---
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>请注意 <code>draft</code> 中的值在 <a class="link" href="https://gohugo.io/content-management/front-matter/"  target="_blank" rel="noopener"
+    >front matter</a> 中是 <code>true</code> 。默认情况下，Hugo 在构建网站时不会发布草稿内容。了解更多关于 <a class="link" href="https://gohugo.io/getting-started/usage/#draft-future-and-expired-content"  target="_blank" rel="noopener"
+    >草稿、未来和过期内容</a> 的信息。</p>
+<h4 id="3在帖子的正文中添加一些markdown但不要更改draft的值">3.在帖子的正文中添加一些 <a class="link" href="https://daringfireball.net/projects/markdown"  target="_blank" rel="noopener"
+    >Markdown</a>，但不要更改 <code>draft</code> 的值。
+</h4><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">+++
+</span></span><span class="line"><span class="cl">title = &#39;My First Post&#39;
+</span></span><span class="line"><span class="cl">date = 2024-01-14T07:07:07+01:00
+</span></span><span class="line"><span class="cl">draft = true
+</span></span><span class="line"><span class="cl">+++
+</span></span><span class="line"><span class="cl">## Introduction
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">This is **bold** text, and this is *emphasized* text.
+</span></span><span class="line"><span class="cl">这是**粗体**文本，这是*强调*文本。
+</span></span><span class="line"><span class="cl">Visit the [Hugo](https://gohugo.io) website!
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h4 id="4保存文件然后启动hugo的开发服务器以查看网站您可以使用以下任一命令来包含草稿内容">4.保存文件，然后启动Hugo的开发服务器以查看网站。您可以使用以下任一命令来包含草稿内容。
+</h4><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">hugo server --buildDrafts
+</span></span><span class="line"><span class="cl">hugo server -D
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="四部署到github">四、部署到Github
+</h3><h4 id="1发布网站-d带草稿发布">1.发布网站(-D带草稿发布)
+</h4><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">hugo -D
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h4 id="2进入public目录">2.进入public目录
+</h4><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">cd public
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h4 id="3此目录新建git仓库">3.此目录新建git仓库
+</h4><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">git init
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h4 id="4将所有修改过的和新创建的文件全部添加到暂存区">4.将所有修改过的和新创建的文件全部添加到暂存区
+</h4><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">git add .
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h4 id="5提交暂存区中的文件并附上提交信息这是将更改永久保存到历史记录中的操作">5.<strong>提交</strong>暂存区中的文件，并附上提交信息。这是将更改永久保存到历史记录中的操作。
+</h4><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">git commit -m &#34;[message]&#34;
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h4 id="6关联一个远程仓库并将其命名为-origin">6.<strong>关联</strong>一个远程仓库，并将其命名为 <code>origin</code>
+</h4><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">git remote add origin [url]
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h4 id="7将本地分支推送到远程仓库并建立跟踪关系">7.将本地分支<strong>推送到</strong>远程仓库，并建立跟踪关系。
+</h4><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">git push -u origin [branch-name]
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h5 id="快速推送已追踪关系">快速推送已追踪关系
+</h5><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">git push
+</span></span></code></pre></td></tr></table>
+</div>
+</div>
+</section>
+
+
+    <footer class="article-footer">
+    
+
+    </footer>
+
+
+    
+</article>
+
+    
+
+    
+
+<aside class="related-content--wrapper">
+    <h2 class="section-title">相关文章</h2>
+    <div class="related-content">
+        <div class="flex article-list--tile">
+            
+                
+<article class="has-image">
+    <a href="/p/markdown/">
+        
+        
+            <div class="article-image">
+                <img src="/p/markdown/kate-bezzubets-QyZlJZWavz0-unsplash.c1156ed95a04e5319f8f6f5c3f7be5dc_hu_fac4ee4f9e7c30f5.jpg" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post Markdown用法"
+                        data-key="markdown" 
+                        data-hash="md5-wRVu2VoE5TGfj29cP3vl3A==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Markdown用法</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/posts/markdown/">
+        
+        
+            <div class="article-image">
+                <img src="/posts/markdown/kate-bezzubets-QyZlJZWavz0-unsplash.c1156ed95a04e5319f8f6f5c3f7be5dc_hu_fac4ee4f9e7c30f5.jpg" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post Markdown用法"
+                        data-key="markdown" 
+                        data-hash="md5-wRVu2VoE5TGfj29cP3vl3A==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Markdown用法</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/p/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/">
+        
+        
+            <div class="article-image">
+                <img src="/p/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/arian-darvishi-wh-RPfR_3_M-unsplash.03926231c70b2c5e0e74a877ca0d3632_hu_166a7ee96bdeb5c1.jpg" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post Linux常用命令记录"
+                        data-key="Linux常用命令" 
+                        data-hash="md5-A5JiMccLLF4OdKh3yg02Mg==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Linux常用命令记录</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/posts/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/">
+        
+        
+            <div class="article-image">
+                <img src="/posts/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/arian-darvishi-wh-RPfR_3_M-unsplash.03926231c70b2c5e0e74a877ca0d3632_hu_166a7ee96bdeb5c1.jpg" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post Linux常用命令记录"
+                        data-key="Linux常用命令" 
+                        data-hash="md5-A5JiMccLLF4OdKh3yg02Mg==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Linux常用命令记录</h2>
+        </div>
+    </a>
+</article>
+
+            
+        </div>
+    </div>
+</aside>
+
+     
+    
+        
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+        2025 DeepSeaHappy
+    </section>
+    
+    <section class="powerby">
+        使用 <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> 构建 <br />
+        主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.31.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.1e9a3bafd846ced4c345d084b355fb8c7bae75701c338f8a1f8a82c780137826.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>

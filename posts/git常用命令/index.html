@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html lang="zh-cn" dir="ltr">
-    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="Git">
 <title>Git常用命令</title>
 
-<link rel='canonical' href='http://localhost:1313/posts/git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/'>
+<link rel='canonical' href='https://yj.al/posts/git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/'>
 
 <link rel="stylesheet" href="/scss/style.min.663803bebe609202d5b39d848f2d7c2dc8b598a2d879efa079fa88893d29c49c.css"><meta property='og:title' content="Git常用命令">
-<meta property='og:description' content="">
-<meta property='og:url' content='http://localhost:1313/posts/git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/'>
+<meta property='og:description' content="Git">
+<meta property='og:url' content='https://yj.al/posts/git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/'>
 <meta property='og:site_name' content='遇见&amp;博客'>
-<meta property='og:type' content='article'><meta property='article:section' content='Posts' /><meta property='article:published_time' content='2025-09-23T15:55:19&#43;08:00'/><meta property='article:modified_time' content='2025-09-23T15:55:19&#43;08:00'/>
+<meta property='og:type' content='article'><meta property='article:section' content='Posts' /><meta property='article:published_time' content='2025-09-03T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2025-09-03T00:00:00&#43;00:00'/><meta property='og:image' content='https://yj.al/posts/git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/roman-synkevych-E-V6EMtGSUU-unsplash.jpg' />
 <meta name="twitter:title" content="Git常用命令">
-<meta name="twitter:description" content="">
+<meta name="twitter:description" content="Git"><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='https://yj.al/posts/git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/roman-synkevych-E-V6EMtGSUU-unsplash.jpg' />
     <link rel="shortcut icon" href="/favicon.ico" />
 
     </head>
@@ -261,13 +262,80 @@
     </ol>
 </aside>
 
-    
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">目录</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ol>
+    <li>
+      <ol>
+        <li><a href="#以下是一些最常用最基础的-git-命令它们能帮助你完成绝大部分日常开发任务">以下是一些最常用、最基础的 Git 命令，它们能帮助你完成绝大部分日常开发任务。</a>
+          <ol>
+            <li><a href="#入门与配置"><strong>入门与配置</strong></a></li>
+            <li><a href="#文件状态与提交"><strong>文件状态与提交</strong></a></li>
+            <li><a href="#分支操作"><strong>分支操作</strong></a></li>
+            <li><a href="#远程仓库"><strong>远程仓库</strong></a></li>
+            <li><a href="#查看历史记录"><strong>查看历史记录</strong></a></li>
+          </ol>
+        </li>
+      </ol>
+    </li>
+  </ol>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
 
             <main class="main full-width">
-    <article class="main-article">
+    <article class="has-image main-article">
     <header class="article-header">
+        <div class="article-image">
+            <a href="/posts/git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/">
+                <img src="/posts/git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/roman-synkevych-E-V6EMtGSUU-unsplash_hu_dff2d281d4f39414.jpg"
+                        srcset="/posts/git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/roman-synkevych-E-V6EMtGSUU-unsplash_hu_dff2d281d4f39414.jpg 800w, /posts/git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/roman-synkevych-E-V6EMtGSUU-unsplash_hu_a4adb122c9be5e6e.jpg 1600w"
+                        width="800" 
+                        height="533" 
+                        loading="lazy"
+                        alt="Featured image of post Git常用命令" />
+                
+            </a>
+        </div>
+    
 
     <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/git/" >
+                Git
+            </a>
+        
+            <a href="/categories/%E5%91%BD%E4%BB%A4/" >
+                命令
+            </a>
+        
+    </header>
     
 
     <div class="article-title-wrapper">
@@ -275,6 +343,10 @@
             <a href="/posts/git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/">Git常用命令</a>
         </h2>
     
+        
+        <h3 class="article-subtitle">
+            Git
+        </h3>
         
     </div>
 
@@ -294,7 +366,7 @@
   <path d="M3 11h16" />
   <path d="M18 16.496v1.504l1 1" />
 </svg>
-                <time class="article-time--published">Sep 23, 2025</time>
+                <time class="article-time--published">Sep 03, 2025</time>
             </div>
         
 
@@ -309,7 +381,7 @@
 
 
                 <time class="article-time--reading">
-                    阅读时长: 0 分钟
+                    阅读时长: 2 分钟
                 </time>
             </div>
         
@@ -324,7 +396,156 @@
     <section class="article-content">
     
     
-    
+    <p>最常用：</p>
+<h3 id="以下是一些最常用最基础的-git-命令它们能帮助你完成绝大部分日常开发任务">以下是一些最常用、最基础的 Git 命令，它们能帮助你完成绝大部分日常开发任务。
+</h3><hr>
+<h4 id="入门与配置"><strong>入门与配置</strong>
+</h4><ul>
+<li>
+<p><code>git init</code></p>
+<ul>
+<li>在当前目录<strong>创建一个新的 Git 仓库</strong>。</li>
+</ul>
+</li>
+<li>
+<p><code>git clone [url]</code></p>
+<ul>
+<li><strong>克隆</strong>一个远程仓库到本地。</li>
+</ul>
+</li>
+<li>
+<p><code>git config --global user.name &quot;[name]&quot;</code></p>
+<ul>
+<li>为你的所有本地仓库设置你的<strong>用户名</strong>。</li>
+</ul>
+</li>
+<li>
+<p><code>git config --global user.email &quot;[email address]&quot;</code></p>
+<ul>
+<li>为你的所有本地仓库设置你的<strong>邮箱地址</strong>。</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h4 id="文件状态与提交"><strong>文件状态与提交</strong>
+</h4><ul>
+<li>
+<p><code>git status</code></p>
+<ul>
+<li><strong>查看</strong>当前仓库的状态，哪些文件被修改了，哪些是新的，哪些待提交。</li>
+</ul>
+</li>
+<li>
+<p><code>git add [file]</code></p>
+<ul>
+<li>将指定文件<strong>添加到暂存区</strong>（staging area），准备提交。</li>
+</ul>
+</li>
+<li>
+<p><code>git add .</code></p>
+<ul>
+<li>将所有修改过的和新创建的文件<strong>全部添加到暂存区</strong>。</li>
+</ul>
+</li>
+<li>
+<p><code>git commit -m &quot;[message]&quot;</code></p>
+<ul>
+<li><strong>提交</strong>暂存区中的文件，并附上提交信息。这是将更改永久保存到历史记录中的操作。</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h4 id="分支操作"><strong>分支操作</strong>
+</h4><ul>
+<li>
+<p><code>git branch</code></p>
+<ul>
+<li><strong>列出</strong>所有本地分支。</li>
+</ul>
+</li>
+<li>
+<p><code>git branch [branch-name]</code></p>
+<ul>
+<li><strong>创建</strong>一个新分支。</li>
+</ul>
+</li>
+<li>
+<p><code>git checkout [branch-name]</code></p>
+<ul>
+<li><strong>切换</strong>到指定分支。</li>
+</ul>
+</li>
+<li>
+<p><code>git checkout -b [new-branch-name]</code></p>
+<ul>
+<li>创建一个新分支并立即<strong>切换</strong>到该分支。</li>
+</ul>
+</li>
+<li>
+<p><code>git merge [branch-name]</code></p>
+<ul>
+<li>将指定分支的更改<strong>合并</strong>到当前分支。</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h4 id="远程仓库"><strong>远程仓库</strong>
+</h4><ul>
+<li>
+<p><code>git remote add origin [url]</code></p>
+<ul>
+<li><strong>关联</strong>一个远程仓库，并将其命名为 <code>origin</code>。</li>
+</ul>
+</li>
+<li>
+<p><code>git push -u origin [branch-name]</code></p>
+<ul>
+<li>将本地分支<strong>推送到</strong>远程仓库，并建立跟踪关系。</li>
+</ul>
+</li>
+<li>
+<p><code>git push</code></p>
+<ul>
+<li>将本地更改<strong>推送到</strong>远程仓库（在建立跟踪关系后使用）。</li>
+</ul>
+</li>
+<li>
+<p><code>git pull</code></p>
+<ul>
+<li>从远程仓库<strong>拉取</strong>最新更改并自动合并。</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h4 id="查看历史记录"><strong>查看历史记录</strong>
+</h4><ul>
+<li>
+<p><code>git log</code></p>
+<ul>
+<li><strong>查看</strong>提交历史。</li>
+</ul>
+</li>
+<li>
+<p><code>git log --oneline</code></p>
+<ul>
+<li>以<strong>简洁的单行</strong>模式查看提交历史。</li>
+</ul>
+</li>
+<li>
+<p><code>git diff</code></p>
+<ul>
+<li><strong>查看</strong>工作区和暂存区之间的差异。</li>
+</ul>
+</li>
+<li>
+<p><code>git diff --staged</code></p>
+<ul>
+<li><strong>查看</strong>暂存区和最新提交之间的差异。</li>
+</ul>
+</li>
+</ul>
+<p>掌握这些命令，你就能应对日常的大部分 Git 工作了。</p>
+
 </section>
 
 
@@ -340,6 +561,39 @@
     
 
     
+
+<aside class="related-content--wrapper">
+    <h2 class="section-title">相关文章</h2>
+    <div class="related-content">
+        <div class="flex article-list--tile">
+            
+                
+<article class="has-image">
+    <a href="/p/git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/">
+        
+        
+            <div class="article-image">
+                <img src="/p/git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/roman-synkevych-E-V6EMtGSUU-unsplash.595251963652adcf14ec562887c7dc40_hu_b2ce3f320cd7c728.jpg" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post Git常用命令"
+                        data-key="Git常用命令" 
+                        data-hash="md5-WVJRljZSrc8U7FYoh8fcQA==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Git常用命令</h2>
+        </div>
+    </a>
+</article>
+
+            
+        </div>
+    </div>
+</aside>
 
      
     
@@ -444,7 +698,7 @@
                 src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
                 
                 >
-            </script><script type="text/javascript" src="/ts/main.a7b964895f17f30445f8790e5fb95a3704c7511d533bab6a32a3e6abd0feb413.js" defer></script>
+            </script><script type="text/javascript" src="/ts/main.1e9a3bafd846ced4c345d084b355fb8c7bae75701c338f8a1f8a82c780137826.js" defer></script>
 <script>
     (function () {
         const customFont = document.createElement('link');
