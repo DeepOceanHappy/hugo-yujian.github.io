@@ -73,7 +73,8 @@ Firefox：http://detectportal.firefox.com/success.txt&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;收款人：DE26ZZZ00000006194&lt;br&gt;
 IBAN： DE68300700100250800000&lt;br&gt;
-备注写：&lt;strong&gt;0 开头&lt;/strong&gt;的德国沃达丰号码&lt;/p&gt;&lt;/blockquote&gt;
+备注写：&lt;strong&gt;0 开头&lt;/strong&gt;的德国沃达丰号码&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;h2 id=&#34;荷兰nl&#34;&gt;荷兰NL
 &lt;/h2&gt;&lt;h3 id=&#34;1simyo&#34;&gt;1.Simyo
 &lt;/h3&gt;&lt;h4 id=&#34;套餐介绍-3&#34;&gt;套餐介绍
@@ -82,10 +83,12 @@ IBAN： DE68300700100250800000&lt;br&gt;
 &lt;/h4&gt;&lt;p&gt;方法一，每180天余额变动（充值或消费）&lt;br&gt;
 方法二，每170天左右使用N26/wise欧元账户向Simyo转账最低0.01欧元，&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;IBAN：NL19INGB0007811670，Name : Simyo，转账需备注06开头的手机号码，如0612345678&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;IBAN：NL19INGB0007811670，Name : Simyo，转账需备注06开头的手机号码，如0612345678&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;h4 id=&#34;验证码迁移esim小工具&#34;&gt;验证码迁移esim小工具
 &lt;/h4&gt;&lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;小工具访问网址：&lt;/strong&gt; https://esim.hio.hu/&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;小工具访问网址：&lt;/strong&gt; https://esim.hio.hu/&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;h2 id=&#34;乌克兰ukr&#34;&gt;乌克兰UKR
 &lt;/h2&gt;&lt;h3 id=&#34;1lifecell&#34;&gt;1.Lifecell
 &lt;/h3&gt;&lt;h4 id=&#34;保号规则-6&#34;&gt;保号规则
@@ -100,7 +103,8 @@ IBAN： DE68300700100250800000&lt;br&gt;
 &lt;/h4&gt;&lt;p&gt;每年易课金买6hkd短信套餐保号&lt;/p&gt;
 &lt;h4 id=&#34;clubsim转esim二维码专用软件版本&#34;&gt;ClubSim转esim二维码专用软件版本
 &lt;/h4&gt;&lt;blockquote&gt;
-&lt;p&gt;[https://esim.kim/ClubSim.apk]&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;[https://esim.kim/ClubSim.apk]&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;h2 id=&#34;菲律宾ph&#34;&gt;菲律宾PH
 &lt;/h2&gt;&lt;h3 id=&#34;1smart&#34;&gt;1.Smart
 &lt;/h3&gt;&lt;h4 id=&#34;保号规则-8&#34;&gt;保号规则
@@ -113,7 +117,8 @@ IBAN： DE68300700100250800000&lt;br&gt;
 &lt;p&gt;查话费打 * 310 #
 一年保号 511NGN  打 * 365* 1#
 两年保号 819NGN   打* 365* 2#
-三年保号1228NGN  打 * 365* 3#&lt;/p&gt;&lt;/blockquote&gt;
+三年保号1228NGN  打 * 365* 3#&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;h2 id=&#34;瑞士ch&#34;&gt;瑞士CH
 &lt;/h2&gt;&lt;h3 id=&#34;1yallo&#34;&gt;1.Yallo
 &lt;/h3&gt;&lt;h4 id=&#34;保号规则-10&#34;&gt;保号规则

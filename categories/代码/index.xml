@@ -17,16 +17,19 @@
 &lt;/h3&gt;&lt;h4 id=&#34;1安装go&#34;&gt;1.安装go
 &lt;/h4&gt;&lt;blockquote&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://go.dev/doc/install&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://go.dev/doc/install&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;
+    &gt;https://go.dev/doc/install&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;h4 id=&#34;2安装git&#34;&gt;2.安装Git
 &lt;/h4&gt;&lt;blockquote&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://git-scm.com/downloads&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://git-scm.com/downloads&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;
+    &gt;https://git-scm.com/downloads&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;h4 id=&#34;3下载hugo最新版&#34;&gt;3.下载Hugo最新版
 &lt;/h4&gt;&lt;blockquote&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/gohugoio/hugo/releases/download/v0.150.0/hugo_extended_withdeploy_0.150.0_windows-amd64.zip&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;hugo_extended_withdeploy_0.150.0_windows-amd64.zip&lt;/a&gt;
-#注意下载extended_withdeploy版本&lt;/p&gt;&lt;/blockquote&gt;
+#注意下载extended_withdeploy版本&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;h4 id=&#34;4配置git绑定github&#34;&gt;4.配置Git绑定github
 &lt;/h4&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
